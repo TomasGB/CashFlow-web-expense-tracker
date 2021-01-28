@@ -21,8 +21,7 @@ export default function SignUpPage() {
         setPassword("");
         setConfirmPassword("");
     };
-    console.log(Name);
-    console.log(email);
+
     async function registration(email, password, Name) {
         try {
             await firebase
@@ -61,7 +60,7 @@ export default function SignUpPage() {
             alert("Password does not match!");
         } else {
             registration(email, password, Name);
-            Router.push("/dashboard");
+            Router.push("/");
             emptyState();
         }
     };

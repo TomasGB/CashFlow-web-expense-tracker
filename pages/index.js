@@ -1,8 +1,13 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/firestore";
+import initFirebase from "../services/firebase";
 
 export default function Home() {
+    initFirebase();
     return (
         <div className={styles.container}>
             <Head>
