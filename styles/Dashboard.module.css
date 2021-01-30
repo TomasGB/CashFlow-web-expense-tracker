@@ -1,10 +1,47 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: royalblue;
   font-family: Helvetica;
+}
+.wrapper{
+  margin-top: 30px;
+  background-color: #ffffff;
+  justify-content: center;
+  align-self: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+}
+.title{
+  text-align: start;
+  margin-left: 25px;
+  }
+.h5 {
+  text-align: center;
+}
+.formBtn{
+  height: fit-content;
+  margin-top: 40px;
+}
+.formBtn{
+  margin-top: 20px;
+  width: fit-content;
+  justify-content: center;
+  align-self: center;
+  background-color: royalblue;
+  border-radius: 5%;
+  border: none;
+  padding: 2% ;
+  font-weight: 700;
+}
+.formBtn:hover{
+  background-color: rgba(96, 131, 235, 0.616);
 }

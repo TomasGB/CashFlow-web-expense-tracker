@@ -4,9 +4,18 @@ import "firebase/auth";
 import "firebase/firestore";
 import Router from "next/router";
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../styles/Dashboard.module.css";
+import Balance from "../components/balance";
+import TransactionList from "../components/transactionList";
+import initFirebase from "../services/firebase";
 
 export default function Dashboard() {
+    initFirebase();
+
+    let currentUserUID = firebase.auth().currentUser;
+    console.log(currentUserUID.uid);
+
     async function loggingOut() {
         try {
             await firebase.auth().signOut();
@@ -18,7 +27,9 @@ export default function Dashboard() {
         }
     }
 
-    let currentUserUID = firebase.auth().currentUser;
+    function addTransaction() {
+        Router.push("/addTransaction");
+    }
 
     const [Name, setName] = useState("");
 
@@ -40,32 +51,6 @@ export default function Dashboard() {
         getUserInfo();
     });
 
-    const [transactions, setTransactions] = useState([]);
-
-    useEffect(() => {
-        firebase
-            .firestore()
-            .collection("transactions")
-            .orderBy("dateId", "desc")
-            .onSnapshot((querySnapshot) => {
-                const transactions = [];
-
-                querySnapshot.docs.forEach((doc) => {
-                    transactions.push({
-                        id: doc.id,
-                        description: doc.data().Description,
-                        amount: doc.data().Amount,
-                        type: doc.data().Type,
-                        dateId: doc.data().dateId,
-                        dateString: doc.data().DateString,
-                        category: doc.data().Category,
-                    });
-                });
-                setTransactions(transactions);
-            });
-    }, []);
-    console.log(transactions);
-
     return (
         <div className={styles.container}>
             <Head>
@@ -73,14 +58,36 @@ export default function Dashboard() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <body id="body">
-                <h1 className={styles.title}>Hello, {Name}</h1>
-                <h4>Transaction History</h4>
-                <button
-                    type="submit"
-                    className={styles.formBtn}
-                    onClick={loggingOut}>
-                    Log Out
-                </button>
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-evenly",
+                    }}>
+                    <h1 className={styles.title}>Hello, {Name}</h1>
+                    <div style={{ display: "flex", marginLeft: "25px" }}>
+                        <button
+                            type="submit"
+                            className={styles.formBtn}
+                            onClick={loggingOut}>
+                            Log Out
+                        </button>
+                        <button
+                            type="submit"
+                            className={styles.formBtn}
+                            onClick={addTransaction}>
+                            Add Transaction
+                        </button>
+                        <div className={styles.formBtn}>
+                            <Link href="/signup">Sign Up</Link>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={styles.wrapper}>
+                    <Balance />
+                    <TransactionList />
+                </div>
             </body>
         </div>
     );

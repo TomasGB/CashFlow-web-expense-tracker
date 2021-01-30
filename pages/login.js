@@ -6,8 +6,6 @@ import "firebase/auth";
 import "firebase/firestore";
 import Router from "next/router";
 
-/*initFirebase();*/
-
 export default function LoginPage() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -25,6 +23,7 @@ export default function LoginPage() {
             const { user, credentials } = response;
 
             console.log(`logged in as ${user.email}`);
+            Router.push("/dashboard");
         } catch (err) {
             alert("Something went wrong!", err.message);
             console.log(`Error: ${err.message}`);
@@ -38,7 +37,7 @@ export default function LoginPage() {
             alert("Password field is required.");
         } else {
             signIn(email, password);
-            Router.push("/dashboard");
+
             emptyState();
         }
     };

@@ -1,0 +1,52 @@
+.wrapper{
+    background-color: #173158,
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    max-width: fit-content;
+    padding: 35px 35px;
+    background-color: #3986F9,
+}
+.transaction {
+    background-Color: rgba(134, 216, 247 , 0.2);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    width: 250px;
+}
+.transactionTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.transactionBottom{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.transactionBottom li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+    margin-bottom: 15px;
+    margin-left: -25px;
+    color: #1f1f1f;
+
+}
+.ArrowExpense{
+    margin-left: 5px;
+    color: #D12820;
+    transform: rotateX(180deg);
+    width: 25px;
+    justify-content: end;
+}
+.ArrowIncome{
+    color: #2B9B2A;
+    width: 25px;
+    justify-content: end;
+}
