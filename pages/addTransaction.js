@@ -107,23 +107,27 @@ function AddTransaction() {
                         }
                         required></input>
                     <label className={styles.formLabel}>Type</label>
-                    <input
+                    <select
                         className={styles.formInput}
-                        type="text"
-                        placeholder="Income / Expense"
                         onChange={(value) =>
                             setState({ ...state, Type: value.target.value })
-                        }
-                        required></input>
+                        }>
+                        <option value="Income">Income</option>
+                        <option value="Expense">Expense</option>
+                    </select>
                     <label className={styles.formLabel}>Category</label>
-                    <input
+                    <select
                         className={styles.formInput}
-                        type="text"
-                        placeholder="Category"
                         onChange={(value) =>
                             setState({ ...state, Category: value.target.value })
-                        }
-                        required></input>
+                        }>
+                        <option value="Others">Others</option>
+                        <option value="Food">Food</option>
+                        <option value="Bills">Bills</option>
+                        <option value="Car expenses">Car expenses</option>
+                        <option value="Work">Work</option>
+                        <option value="Investments">Investments</option>
+                    </select>
                     <button
                         type="submit"
                         className={styles.formBtn}
