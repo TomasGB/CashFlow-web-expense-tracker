@@ -5,8 +5,8 @@
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-    max-width: fit-content;
-    padding: 35px 35px;
+    width: 100vw;
+    padding: 15px 35px;
     background-color: #3986F9,
 }
 .transaction {
@@ -18,12 +18,17 @@
     width: 250px;
 }
 .transactionTop{
+    width: 100%;
+    height: 45%;
     display: flex;
+    text-align: left;
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
 }
 .transactionBottom{
+    align-self: flex-end;
+    width: fit-content;
     font-size: 14px;
     font-weight: 600;
 
@@ -49,4 +54,14 @@
     color: #2B9B2A;
     width: 25px;
     justify-content: end;
+}
+@media (max-width:425px){
+.transaction {
+    background-Color: rgba(134, 216, 247 , 0.2);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    width: 500px;
+}
 }

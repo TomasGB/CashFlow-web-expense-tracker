@@ -1,0 +1,24 @@
+.IncomeTitle{
+    font-size: 25px;
+    margin: 25px 0px;
+}
+.Category{
+    color: "#ffffff";
+    margin: 5%;
+    align-self: center;
+}
+.Icons{
+    width: 25px;
+}
+.TitleText{align-Self: "flex-start";
+    color: "#000000";
+    font-Size: 16;
+    font-Weight: "700";
+    margin-Left: 5;
+}
+.Text{
+    align-Self: "center";
+    color: "#ffffff";
+    margin-bottom: 2px;
+    margin-top: 2px;
+}

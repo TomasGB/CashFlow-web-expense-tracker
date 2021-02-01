@@ -20,7 +20,7 @@ export default function Home() {
                     <img className={styles.logo} src="logo.png" />
                 </div>
                 <h4 className={styles.phrase}>
-                    Please login to start or sign up to start
+                    Please login or sign up to start
                 </h4>
                 <div className={styles.linkBtnWrapper}>
                     <div className={styles.linkBtn}>

@@ -9,12 +9,13 @@ import styles from "../styles/Dashboard.module.css";
 import Balance from "../components/balance";
 import TransactionList from "../components/transactionList";
 import initFirebase from "../services/firebase";
+import IncomeChart from "../components/incomeChart";
+import ExpenseChart from "../components/expenseChart";
 
 export default function Dashboard() {
     initFirebase();
 
     let currentUserUID = firebase.auth().currentUser;
-    console.log(currentUserUID.uid);
 
     async function loggingOut() {
         try {
@@ -29,6 +30,9 @@ export default function Dashboard() {
 
     function addTransaction() {
         Router.push("/addTransaction");
+    }
+    function goToAnalyticsPage() {
+        Router.push("/analytics");
     }
 
     const [Name, setName] = useState("");
@@ -76,17 +80,25 @@ export default function Dashboard() {
                             type="submit"
                             className={styles.formBtn}
                             onClick={addTransaction}>
-                            Add Transaction
+                            Add Transactions
                         </button>
-                        <div className={styles.formBtn}>
-                            <Link href="/signup">Sign Up</Link>
-                        </div>
+                        <button
+                            type="submit"
+                            className={styles.formBtn}
+                            onClick={goToAnalyticsPage}>
+                            Analytics
+                        </button>
                     </div>
                 </div>
 
                 <div className={styles.wrapper}>
                     <Balance />
                     <TransactionList />
+                    <div style={{ marginTop: "25px" }}>
+                        <b>Analytics Summary</b>
+                        <IncomeChart />
+                        <ExpenseChart />
+                    </div>
                 </div>
             </body>
         </div>

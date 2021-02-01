@@ -62,7 +62,7 @@ export default function LoginPage() {
                     <label className={styles.formLabel}>Password</label>
                     <input
                         className={styles.formInput}
-                        type="text"
+                        type="password"
                         placeholder="Enter your password"
                         name="password"
                         onChange={(password) =>

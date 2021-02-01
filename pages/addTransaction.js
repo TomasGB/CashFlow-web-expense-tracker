@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 import Router from "next/router";
 import Head from "next/head";
-import styles from "../styles/signup.module.css";
+import styles from "../styles/AddTransaction.module.css";
 import initFirebase from "../services/firebase";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faPlus } from "@fortawesome/free-solid-svg-icons";
 
 function AddTransaction() {
     initFirebase();
@@ -70,15 +72,26 @@ function AddTransaction() {
                 <title>Add Transaction | CashFlow</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div style={{ display: "flex", marginLeft: "25px" }}>
-                <button
-                    type="submit"
-                    className={styles.formBtn}
-                    onClick={() => {
-                        Router.push("/dashboard");
+
+            <div
+                style={{
+                    display: "flex",
+                    marginTop: "20px",
+                    marginLeft: "25px",
+                }}
+                onClick={() => {
+                    Router.push("/dashboard");
+                }}>
+                <FontAwesomeIcon icon={faArrowLeft} width={25} color={"#fff"} />
+                <p
+                    style={{
+                        color: "#fff",
+                        marginLeft: "15px",
+                        fontWeight: 700,
+                        fontSize: 18,
                     }}>
-                    back
-                </button>
+                    Back
+                </p>
             </div>
             <body id="body">
                 <h1 className={styles.title}>Add a new transaction</h1>
@@ -87,8 +100,7 @@ function AddTransaction() {
                     <input
                         className={styles.formInput}
                         type="text"
-                        placeholder="Description"
-                        name="Name"
+                        placeholder="Description *"
                         onChange={(value) =>
                             setState({
                                 ...state,
@@ -100,7 +112,7 @@ function AddTransaction() {
                     <input
                         className={styles.formInput}
                         type="text"
-                        placeholder="Amount"
+                        placeholder="Amount *"
                         name="numeric"
                         onChange={(value) =>
                             setState({ ...state, Amount: value.target.value })
@@ -128,12 +140,9 @@ function AddTransaction() {
                         <option value="Work">Work</option>
                         <option value="Investments">Investments</option>
                     </select>
-                    <button
-                        type="submit"
-                        className={styles.formBtn}
-                        onClick={createTransaction}>
-                        +
-                    </button>
+                    <div className={styles.formBtn} onClick={AddTransaction}>
+                        <FontAwesomeIcon icon={faPlus} width={"15px"} />
+                    </div>
                 </div>
             </body>
         </div>

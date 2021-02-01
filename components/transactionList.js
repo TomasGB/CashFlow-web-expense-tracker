@@ -37,32 +37,41 @@ const TransactionList = () => {
                 setTransactions(transactions);
             });
     }, []);
-
     return (
         <div className={styles.wrapper}>
-            <h4 style={{ marginLeft: "35px" }}>Transaction History</h4>
+            <h4>Transaction History</h4>
             <div className={styles.container}>
                 {transactions.length >= 1
                     ? transactions.map((transaction, dateId) => {
                           return (
                               <li className={styles.transaction} key={dateId}>
                                   <div className={styles.transactionTop}>
-                                      <b>{transaction.description}:</b>{" "}
-                                      {transaction.type == "Income" ? (
-                                          <FontAwesomeIcon
-                                              icon={faCaretUp}
-                                              className={styles.ArrowIncome}
-                                          />
-                                      ) : (
-                                          <FontAwesomeIcon
-                                              icon={faCaretUp}
-                                              className={styles.ArrowExpense}
-                                          />
-                                      )}
+                                      <div style={{ marginRight: "25px" }}>
+                                          <b>{transaction.description}:</b>
+                                      </div>
+                                      <div>
+                                          {transaction.type == "Income" ? (
+                                              <FontAwesomeIcon
+                                                  icon={faCaretUp}
+                                                  className={styles.ArrowIncome}
+                                              />
+                                          ) : (
+                                              <FontAwesomeIcon
+                                                  icon={faCaretUp}
+                                                  className={
+                                                      styles.ArrowExpense
+                                                  }
+                                              />
+                                          )}
+                                      </div>
                                   </div>
                                   <div className={styles.transactionBottom}>
                                       <ul>
-                                          <li>$ {transaction.amount}</li>
+                                          {transaction.type == "Expense" ? (
+                                              <li>$ -{transaction.amount}</li>
+                                          ) : (
+                                              <li>$ {transaction.amount}</li>
+                                          )}
                                           <li>{transaction.dateString}</li>
                                       </ul>
                                   </div>

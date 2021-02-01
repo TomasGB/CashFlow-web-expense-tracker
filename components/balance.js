@@ -4,6 +4,7 @@ import "firebase/auth";
 import "firebase/firestore";
 import styles from "../styles/TransactionList.module.css";
 import initFirebase from "../services/firebase";
+
 function Balance() {
     initFirebase();
     let currentUserUID = firebase.auth().currentUser.uid;
@@ -67,9 +68,13 @@ function Balance() {
                         }}>
                         Your Balance
                     </b>
-                    <h5 style={{ display: "block", textAlign: "center" }}>
-                        {balance}
-                    </h5>
+                    <h2
+                        style={{
+                            display: "block",
+                            textAlign: "center",
+                        }}>
+                        $ {balance}
+                    </h2>
                 </div>
             </div>
             <div
@@ -87,7 +92,7 @@ function Balance() {
                     }}>
                     <div
                         style={{
-                            fontSize: 16,
+                            fontSize: 18,
                             marginLeft: 15,
                             marginRight: 15,
                             color: "grey",
@@ -96,14 +101,14 @@ function Balance() {
                     </div>
                     <div
                         style={{
-                            fontSize: 14,
+                            fontSize: 16,
                             color: "green",
                         }}>{`+ ${totIncome}`}</div>
                 </div>
                 <div>
                     <div
                         style={{
-                            fontSize: 16,
+                            fontSize: 18,
                             marginLeft: 15,
                             marginRight: 15,
                             color: "grey",
@@ -112,11 +117,11 @@ function Balance() {
                     </div>
                     <div
                         style={{
-                            fontSize: 14,
+                            fontSize: 16,
                             color: "red",
                             alignSelf: "center",
                             textAlign: "center",
-                        }}>{`+ ${totExpense}`}</div>
+                        }}>{`- ${totExpense}`}</div>
                 </div>
             </div>
         </div>
