@@ -1,23 +1,26 @@
 .container {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: royalblue;
   font-family: Helvetica;
+  overflow-x: hidden;
+
 }
 .wrapper{
   margin-top: 30px;
   background-color: #ffffff;
   justify-content: center;
   align-self: center;
-  width: 100vw;
-  height: 100vh;
-  padding: 10px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 5%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   overflow-x: hidden;
 }
 .title{

@@ -82,20 +82,25 @@ export default function IncomeChart() {
     };
 
     return (
-        <div>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+            <div className={styles.IncomeTitle}>Incomes</div>
             <div
                 style={{
                     padding: 10,
-                    margin: 5,
-                    width: "80%",
+                    marginTop: 25,
+                    width: "100%",
+                    display: "flex",
+                    flexDirection: "row",
+                    flexWrap: "wrap",
+                    justifyContent: "space-evenly",
                 }}>
-                <div className={styles.IncomeTitle}>Incomes</div>
                 <div
                     style={{
                         display: "flex",
-                        flexDirection: "row",
-                        justifyContent: "space-between",
+                        justifyContent: "space-evenly",
                         alignSelf: "center",
+                        width: "40%",
+                        marginBottom: "5%",
                     }}>
                     <div className={styles.Category}>
                         <div
@@ -144,14 +149,14 @@ export default function IncomeChart() {
                     </div>
                 </div>
                 <div style={{ marginTop: 15 }}></div>
-            </div>
-            <div
-                style={{
-                    width: "300px",
-                    justifyContent: "center",
-                    alignSelf: "center",
-                }}>
-                <Pie data={data} width={400} height={400} />
+                <div
+                    style={{
+                        width: "300px",
+                        justifyContent: "center",
+                        alignSelf: "center",
+                    }}>
+                    <Pie data={data} width={400} height={400} />
+                </div>
             </div>
         </div>
     );

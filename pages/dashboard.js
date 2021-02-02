@@ -60,6 +60,9 @@ export default function Dashboard() {
             <Head>
                 <title>Dashboard | CashFlow</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1"></meta>
             </Head>
             <body id="body">
                 <div
@@ -89,15 +92,14 @@ export default function Dashboard() {
                             Analytics
                         </button>
                     </div>
-                </div>
-
-                <div className={styles.wrapper}>
-                    <Balance />
-                    <TransactionList />
-                    <div style={{ marginTop: "25px" }}>
-                        <b>Analytics Summary</b>
-                        <IncomeChart />
-                        <ExpenseChart />
+                    <div className={styles.wrapper}>
+                        <Balance />
+                        <TransactionList />
+                        <div style={{ marginTop: "25px" }}>
+                            <b>Analytics Summary</b>
+                            <IncomeChart />
+                            <ExpenseChart />
+                        </div>
                     </div>
                 </div>
             </body>
