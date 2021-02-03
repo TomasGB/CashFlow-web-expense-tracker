@@ -83,7 +83,10 @@ function AddTransaction() {
                 onClick={() => {
                     Router.push("/dashboard");
                 }}>
-                <FontAwesomeIcon icon={faArrowLeft} width={25} color={"#fff"} />
+                <FontAwesomeIcon
+                    icon={faArrowLeft}
+                    className={styles.BackBtn}
+                />
                 <p
                     style={{
                         color: "#fff",
@@ -101,7 +104,7 @@ function AddTransaction() {
                     <input
                         className={styles.formInput}
                         type="text"
-                        placeholder="Description *"
+                        placeholder="Description"
                         onChange={(value) =>
                             setState({
                                 ...state,
@@ -113,7 +116,7 @@ function AddTransaction() {
                     <input
                         className={styles.formInput}
                         type="text"
-                        placeholder="Amount *"
+                        placeholder="Amount"
                         name="numeric"
                         onChange={(value) =>
                             setState({ ...state, Amount: value.target.value })
@@ -137,7 +140,7 @@ function AddTransaction() {
                         onChange={(value) =>
                             setState({ ...state, Category: value.target.value })
                         }>
-                        <option value="" selected disabled hidden>
+                        <option selected disabled hidden>
                             Choose a category
                         </option>
                         <option value="Others">Others</option>

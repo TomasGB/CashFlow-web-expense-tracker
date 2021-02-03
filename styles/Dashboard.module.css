@@ -8,6 +8,8 @@
   background-color: royalblue;
   font-family: Helvetica;
   overflow-x: hidden;
+  padding-left: 2%;
+  padding-right: 2%;
 
 }
 .wrapper{

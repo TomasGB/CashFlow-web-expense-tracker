@@ -54,7 +54,14 @@
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
+  cursor: pointer;
 }
 .BackBtn{
-    width: 5px;
+    width: 25px;
+    color: #ffffff;
+}
+.BackBtn:hover{
+  width: 25px;
+  color: #ffffff;
+  cursor: pointer;
 }
