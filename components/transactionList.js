@@ -4,7 +4,7 @@ import "firebase/auth";
 import "firebase/firestore";
 import initFirebase from "../services/firebase";
 import styles from "../styles/TransactionList.module.css";
-import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
+import { faCaretUp, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const TransactionList = () => {
@@ -37,6 +37,24 @@ const TransactionList = () => {
                 setTransactions(transactions);
             });
     }, []);
+
+    const deleteTransaction = async (id) => {
+        await firebase
+            .firestore()
+            .collection("users")
+            .doc(`${currentUserUID}`)
+            .collection("transactionsList")
+            .doc(id)
+            .delete()
+            .then(function () {
+                alert("Transaction successfully deleted!");
+            })
+            .catch(function (error) {
+                alert("Error removing transaction: ", error);
+                console.log("Error removing transaction: ", error);
+            });
+    };
+
     return (
         <div className={styles.wrapper}>
             <h4>Transaction History</h4>
@@ -46,8 +64,17 @@ const TransactionList = () => {
                           return (
                               <li className={styles.transaction} key={dateId}>
                                   <div className={styles.transactionTop}>
-                                      <div style={{ marginRight: "25px" }}>
-                                          <b>{transaction.description}:</b>
+                                      <div
+                                          style={{
+                                              marginRight: "100px",
+                                              width: "100px",
+                                          }}>
+                                          <b
+                                              style={{
+                                                  width: "fit-content",
+                                              }}>
+                                              {transaction.description}:
+                                          </b>
                                       </div>
                                       <div>
                                           {transaction.type == "Income" ? (
@@ -74,6 +101,19 @@ const TransactionList = () => {
                                           )}
                                           <li>{transaction.dateString}</li>
                                       </ul>
+                                      <div
+                                          onClick={() => {
+                                              deleteTransaction(transaction.id);
+                                          }}>
+                                          <FontAwesomeIcon
+                                              icon={faTrash}
+                                              style={{
+                                                  width: "20px",
+                                                  justifyContent: "center",
+                                                  marginTop: "40px",
+                                              }}
+                                          />
+                                      </div>
                                   </div>
                               </li>
                           );

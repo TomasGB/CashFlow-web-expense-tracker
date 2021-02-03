@@ -15,7 +15,7 @@
     padding: 10px;
     border-radius: 5px;
     list-style: none;
-    width: 250px;
+    width: fit-content;
 }
 .transactionTop{
     width: 100%;
@@ -27,10 +27,11 @@
     font-size: 16px;
 }
 .transactionBottom{
-    align-self: flex-end;
-    width: fit-content;
+    width: 100%;
     font-size: 14px;
     font-weight: 600;
+    display: flex;
+    justify-content: space-between;
 
 }
 .transactionBottom li{
