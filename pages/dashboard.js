@@ -11,11 +11,17 @@ import TransactionList from "../components/transactionList";
 import initFirebase from "../services/firebase";
 import IncomeChart from "../components/incomeChart";
 import ExpenseChart from "../components/expenseChart";
+import {
+    faPercent,
+    faPlus,
+    faSignOutAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Dashboard() {
     initFirebase();
 
-    let currentUserUID = firebase.auth().currentUser;
+    let currentUserUID = firebase.auth().currentUser.uid;
 
     async function loggingOut() {
         try {
@@ -42,7 +48,7 @@ export default function Dashboard() {
             let doc = await firebase
                 .firestore()
                 .collection("users")
-                .doc(currentUserUID.uid)
+                .doc(currentUserUID)
                 .get();
 
             if (!doc.exists) {
@@ -60,11 +66,8 @@ export default function Dashboard() {
             <Head>
                 <title>Dashboard | CashFlow</title>
                 <link rel="icon" href="/favicon.ico" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1"></meta>
             </Head>
-            <body id="body">
+            <div>
                 <div
                     style={{
                         display: "flex",
@@ -77,32 +80,60 @@ export default function Dashboard() {
                             type="submit"
                             className={styles.formBtn}
                             onClick={loggingOut}>
-                            Log Out
+                            <p>Log Out</p>
+                            <FontAwesomeIcon
+                                icon={faSignOutAlt}
+                                style={{
+                                    width: "15px",
+                                    marginLeft: "10px",
+                                    justifyContent: "center",
+                                    alignSelf: "center",
+                                }}
+                            />
                         </button>
                         <button
                             type="submit"
                             className={styles.formBtn}
                             onClick={addTransaction}>
-                            Add Transactions
+                            <p>Add transaction</p>
+                            <FontAwesomeIcon
+                                icon={faPlus}
+                                style={{
+                                    width: "10px",
+                                    marginLeft: "10px",
+                                    justifyContent: "center",
+                                    alignSelf: "center",
+                                }}
+                            />
                         </button>
                         <button
                             type="submit"
                             className={styles.formBtn}
                             onClick={goToAnalyticsPage}>
-                            Analytics
+                            <p>Analytics</p>
+                            <FontAwesomeIcon
+                                icon={faPercent}
+                                style={{
+                                    width: "10px",
+                                    marginLeft: "10px",
+                                    justifyContent: "center",
+                                    alignSelf: "center",
+                                }}
+                            />
                         </button>
                     </div>
-                    <div className={styles.wrapper}>
-                        <Balance />
-                        <TransactionList />
-                        <div style={{ marginTop: "25px" }}>
-                            <b>Analytics Summary</b>
-                            <IncomeChart />
-                            <ExpenseChart />
-                        </div>
+                </div>
+
+                <div className={styles.wrapper}>
+                    <Balance />
+                    <TransactionList />
+                    <div style={{ marginTop: "50px" }}>
+                        <b className={styles.subtitle}>Analytics Summary</b>
+                        <IncomeChart />
+                        <ExpenseChart />
                     </div>
                 </div>
-            </body>
+            </div>
         </div>
     );
 }

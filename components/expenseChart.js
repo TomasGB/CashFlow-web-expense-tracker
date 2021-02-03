@@ -93,7 +93,12 @@ export default function ExpenseChart() {
     };
 
     return (
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <div
+            style={{
+                display: "flex",
+                flexDirection: "column",
+                marginTop: "50px",
+            }}>
             <div className={styles.IncomeTitle}>Expenses</div>
             <div
                 style={{

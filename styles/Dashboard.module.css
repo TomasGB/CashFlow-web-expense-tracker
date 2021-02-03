@@ -30,9 +30,8 @@
 .h5 {
   text-align: center;
 }
-.formBtn{
-  height: fit-content;
-  margin-top: 40px;
+.subtitle {
+  font-size: 25px;
 }
 .formBtn{
   margin-top: 20px;
@@ -44,7 +43,10 @@
   border: none;
   padding: 2% ;
   font-weight: 700;
+  display: flex;
+  flex-direction: row;
 }
 .formBtn:hover{
   background-color: rgba(96, 131, 235, 0.616);
+  cursor: pointer;
 }

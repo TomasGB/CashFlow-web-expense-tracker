@@ -71,7 +71,7 @@ export default function SignUpPage() {
                 <title>Sign up | CashFlow</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <body id="body">
+            <div>
                 <h1 className={styles.title}>Sign Up to CashFlow!</h1>
                 <div className={styles.Form}>
                     <label className={styles.formLabel}>Name</label>
@@ -93,7 +93,7 @@ export default function SignUpPage() {
                     <label className={styles.formLabel}>Password</label>
                     <input
                         className={styles.formInput}
-                        type="text"
+                        type="password"
                         placeholder="Enter your password"
                         name="password"
                         onChange={(password) =>
@@ -103,7 +103,7 @@ export default function SignUpPage() {
                     <label className={styles.formLabel}>Confirm Password</label>
                     <input
                         className={styles.formInput}
-                        type="text"
+                        type="password"
                         placeholder="Confirm your password"
                         name="confirmPassword"
                         onChange={(confirmPassword) =>
@@ -117,7 +117,7 @@ export default function SignUpPage() {
                         Sign up
                     </button>
                 </div>
-            </body>
+            </div>
         </div>
     );
 }

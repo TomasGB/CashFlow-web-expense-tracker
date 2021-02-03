@@ -48,7 +48,7 @@ export default function LoginPage() {
                 <title>Login | CashFlow</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <body id="body">
+            <div>
                 <h1 className={styles.title}>Login to CashFlow!</h1>
                 <div className={styles.Form}>
                     <label className={styles.formLabel}>Email</label>
@@ -76,7 +76,7 @@ export default function LoginPage() {
                         Login
                     </button>
                 </div>
-            </body>
+            </div>
         </div>
     );
 }

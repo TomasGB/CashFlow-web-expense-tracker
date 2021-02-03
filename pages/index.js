@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 import initFirebase from "../services/firebase";
@@ -14,7 +13,7 @@ export default function Home() {
                 <title>CashFlow</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <body id="body">
+            <div>
                 <h1 className={styles.title}>Welcome to CashFlow!</h1>
                 <div className={styles.logoWrapper}>
                     <img className={styles.logo} src="logo.png" />
@@ -30,7 +29,7 @@ export default function Home() {
                         <Link href="/signup">Sign Up</Link>
                     </div>
                 </div>
-            </body>
+            </div>
         </div>
     );
 }

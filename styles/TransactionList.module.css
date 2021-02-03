@@ -1,5 +1,5 @@
 .wrapper{
-    background-color: #173158,
+    margin-top: 25px;
 }
 .container {
     display: flex;
@@ -12,6 +12,7 @@
 .transaction {
     background-Color: rgba(134, 216, 247 , 0.2);
     margin: 5px;
+    margin-bottom: px;
     padding: 10px;
     border-radius: 5px;
     list-style: none;
@@ -55,6 +56,15 @@
     color: #2B9B2A;
     width: 25px;
     justify-content: end;
+}
+.deleteBtn{
+    width: 20px;
+    justify-content: "center";
+    margin-Top: 40px;
+}
+.deleteBtn:hover{
+    color: rgba(39, 38, 38, 0.877);
+    cursor: pointer;
 }
 @media (max-width:425px){
 .transaction {

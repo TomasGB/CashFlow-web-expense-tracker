@@ -66,6 +66,7 @@ function AddTransaction() {
             Router.push("/dashboard");
         }
     };
+
     return (
         <div className={styles.container}>
             <Head>
@@ -124,6 +125,9 @@ function AddTransaction() {
                         onChange={(value) =>
                             setState({ ...state, Type: value.target.value })
                         }>
+                        <option value="" selected disabled hidden>
+                            Choose type
+                        </option>
                         <option value="Income">Income</option>
                         <option value="Expense">Expense</option>
                     </select>
@@ -133,6 +137,9 @@ function AddTransaction() {
                         onChange={(value) =>
                             setState({ ...state, Category: value.target.value })
                         }>
+                        <option value="" selected disabled hidden>
+                            Choose a category
+                        </option>
                         <option value="Others">Others</option>
                         <option value="Food">Food</option>
                         <option value="Bills">Bills</option>
@@ -140,7 +147,7 @@ function AddTransaction() {
                         <option value="Work">Work</option>
                         <option value="Investments">Investments</option>
                     </select>
-                    <div className={styles.formBtn} onClick={AddTransaction}>
+                    <div className={styles.formBtn} onClick={createTransaction}>
                         <FontAwesomeIcon icon={faPlus} width={"15px"} />
                     </div>
                 </div>

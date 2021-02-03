@@ -57,7 +57,7 @@ const TransactionList = () => {
 
     return (
         <div className={styles.wrapper}>
-            <h4>Transaction History</h4>
+            <b style={{ fontSize: "25px" }}>Transaction History</b>
             <div className={styles.container}>
                 {transactions.length >= 1
                     ? transactions.map((transaction, dateId) => {
@@ -107,11 +107,7 @@ const TransactionList = () => {
                                           }}>
                                           <FontAwesomeIcon
                                               icon={faTrash}
-                                              style={{
-                                                  width: "20px",
-                                                  justifyContent: "center",
-                                                  marginTop: "40px",
-                                              }}
+                                              className={styles.deleteBtn}
                                           />
                                       </div>
                                   </div>
