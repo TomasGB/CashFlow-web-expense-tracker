@@ -39,7 +39,7 @@ const TransactionList = (props) => {
             await firebase
                 .firestore()
                 .collection("users")
-                .doc(`${currentUserUID}`)
+                .doc(props.uid)
                 .collection("transactionsList")
                 .doc(id)
                 .delete()
