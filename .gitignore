@@ -35,4 +35,5 @@ yarn-error.log*
 
 #firebase
 /config/keys.js
-/services/firebase.js
+/services/firebaseClient.js
+secrets.json
