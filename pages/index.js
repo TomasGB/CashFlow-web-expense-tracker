@@ -3,10 +3,10 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import "firebase/auth";
 import "firebase/firestore";
-import initFirebase from "../services/firebase";
+import { useAuth } from "../services/auth";
 
 export default function Home() {
-    initFirebase();
+    const { user } = useAuth();
     return (
         <div className={styles.container}>
             <Head>

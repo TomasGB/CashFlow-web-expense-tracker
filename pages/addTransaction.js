@@ -97,7 +97,7 @@ function AddTransaction() {
                     Back
                 </p>
             </div>
-            <body id="body">
+            <div id="body">
                 <h1 className={styles.title}>Add a new transaction</h1>
                 <div className={styles.Form}>
                     <label className={styles.formLabel}>Description</label>
@@ -128,7 +128,7 @@ function AddTransaction() {
                         onChange={(value) =>
                             setState({ ...state, Type: value.target.value })
                         }>
-                        <option value="" selected disabled hidden>
+                        <option selected disabled hidden>
                             Choose type
                         </option>
                         <option value="Income">Income</option>
@@ -154,7 +154,7 @@ function AddTransaction() {
                         <FontAwesomeIcon icon={faPlus} width={"15px"} />
                     </div>
                 </div>
-            </body>
+            </div>
         </div>
     );
 }
