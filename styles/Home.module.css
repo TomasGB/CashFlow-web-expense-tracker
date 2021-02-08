@@ -1,3 +1,4 @@
+@media(max-width:425px){
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -21,6 +22,7 @@
 .phrase{
   color: #ffffff;
   text-align: center;
+  font-size: 1rem;
 }
 .linkBtnWrapper{
   display: flex;
@@ -66,4 +68,126 @@
   width: 150px;
   justify-content: center;
   align-self: center;
+}
+}
+@media(min-width:426px) {
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: royalblue;
+  font-family: Helvetica;
+}
+.title {
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+}
+.logo {
+  width: 50%;
+}
+.logoWrapper{
+  text-align: center;
+}
+.phrase{
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+}
+.linkBtnWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+}
+.linkBtn {
+  padding: 2%;
+  background-color: rgba(56, 103, 204, 0.795);
+  width: 150px;
+  text-align: center;
+  margin: 0% 5%;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffffff;
+}
+.linkBtn:hover {
+  background-color: rgb(44, 94, 204);
+}
+}
+@media(min-width:2560px){
+  .container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: royalblue;
+  font-family: Helvetica;
+}
+.title {
+  justify-content: center;
+  text-align: center;
+  font-size: 90px;
+}
+.logo {
+  width: 80%;
+}
+.logoWrapper{
+  text-align: center;
+}
+.phrase{
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+}
+.linkBtnWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5%;
+}
+.linkBtn {
+  padding: 2% 5%;
+  background-color: rgba(56, 103, 204, 0.795);
+  width: 300px;
+  text-align: center;
+  margin: 0% 5%;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 40px;
+  color: #ffffff;
+}
+.linkBtn:hover {
+  background-color: rgb(44, 94, 204);
+}
+.Form{
+  display: flex;
+  flex-direction: column;
+}
+.formLabel{
+  display: block;
+  margin: 2%;
+  font-weight: 600;
+}
+.formInput{
+  display: block;
+  margin: 2%;
+  border-top: none; 
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  height: 25px;
+  background-color: none;
+}
+.formBtn{
+  margin-top: 20px;
+  width: 150px;
+  justify-content: center;
+  align-self: center;
+}
 }

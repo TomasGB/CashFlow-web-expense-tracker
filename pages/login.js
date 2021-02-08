@@ -8,30 +8,6 @@ import Router from "next/router";
 import firebaseClient from "../services/firebaseClient";
 
 export default function LoginPage() {
-    /*
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-
-    const emptyState = () => {
-        setEmail("");
-        setPassword("");
-    };
-
-    async function signIn(email, password) {
-        try {
-            const response = await firebase
-                .auth()
-                .signInWithEmailAndPassword(email, password);
-            const { user, credentials } = response;
-
-            console.log(`logged in as ${user.email}`);
-            Router.push("/dashboard");
-        } catch (err) {
-            alert("Something went wrong!", err.message);
-            console.log(`Error: ${err.message}`);
-        }
-    }*/
-
     firebaseClient();
 
     const [email, setEmail] = useState("");
