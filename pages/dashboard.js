@@ -72,6 +72,7 @@ export default function Dashboard({ session }) {
                 <Head>
                     <title>Dashboard | CashFlow</title>
                     <link rel="icon" href="/favicon.ico" />
+                    <meta name="theme-color" content="#266BD1" />
                 </Head>
                 <div>
                     <div

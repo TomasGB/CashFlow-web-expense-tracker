@@ -70,6 +70,7 @@ export default function SignUpPage() {
             <Head>
                 <title>Sign up | CashFlow</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta name="theme-color" content="#266BD1" />
             </Head>
             <div>
                 <h1 className={styles.title}>Sign Up to CashFlow!</h1>

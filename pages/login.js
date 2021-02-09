@@ -50,6 +50,7 @@ export default function LoginPage() {
             <Head>
                 <title>Login | CashFlow</title>
                 <link rel="icon" href="/favicon.ico" />
+                <meta name="theme-color" content="#266BD1" />
             </Head>
             <div>
                 <h1 className={styles.title}>Login to CashFlow!</h1>

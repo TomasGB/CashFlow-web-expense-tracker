@@ -103,6 +103,7 @@ function AddTransaction({ session }) {
                 <Head>
                     <title>Add Transaction | CashFlow</title>
                     <link rel="icon" href="/favicon.ico" />
+                    <meta name="theme-color" content="#266BD1" />
                 </Head>
                 <div>
                     <h1 className={styles.title}>Add a new transaction</h1>
