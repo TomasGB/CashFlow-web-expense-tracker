@@ -6,7 +6,6 @@ import { useAuth } from "../services/auth";
 import nookies from "nookies";
 import { verifyIdToken } from "../services/firebaseAdmin";
 import firebaseClient from "../services/firebaseClient";
-import TransactionListBlank from "../components/transactionListBlank";
 import Router from "next/router";
 import Head from "next/head";
 import styles from "../styles/AddTransaction.module.css";
@@ -42,20 +41,30 @@ function AddTransaction({ session }) {
         });
         console.log(state);
         const createTransaction = async () => {
-            let date = Date.now();
-            let category = "";
             let today = new Date();
+            let year = today.getFullYear();
+            let month = today.getMonth();
+            let day = today.getDate();
+            let hour = today.getHours();
+            let minutes = today.getMinutes();
+
+            if (month < 10) {
+                month = "0" + month;
+            }
+            if (day < 10) {
+                day = "0" + day;
+            }
+            if (hour < 10) {
+                hour = "0" + hour;
+            }
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+
+            let category = "";
+
             let dateString =
-                today.getMonth() +
-                1 +
-                "-" +
-                today.getDate() +
-                "-" +
-                today.getFullYear() +
-                "  " +
-                today.getHours() +
-                ":" +
-                today.getMinutes();
+                month + "-" + day + "-" + year + "  " + hour + ":" + minutes;
 
             if (state.Category == "") {
                 category = "Others";
@@ -80,7 +89,7 @@ function AddTransaction({ session }) {
                         Description: state.Description,
                         Amount: state.Amount,
                         Type: state.Type,
-                        dateId: date,
+                        dateId: today,
                         DateString: dateString,
                         Category: category,
                     });
@@ -95,31 +104,7 @@ function AddTransaction({ session }) {
                     <title>Add Transaction | CashFlow</title>
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
-
-                <div
-                    style={{
-                        display: "flex",
-                        marginTop: "20px",
-                        marginLeft: "25px",
-                    }}
-                    onClick={() => {
-                        Router.push("/dashboard");
-                    }}>
-                    <FontAwesomeIcon
-                        icon={faArrowLeft}
-                        className={styles.BackBtn}
-                    />
-                    <p
-                        style={{
-                            color: "#fff",
-                            marginLeft: "15px",
-                            fontWeight: 700,
-                            fontSize: 18,
-                        }}>
-                        Back
-                    </p>
-                </div>
-                <div id="body">
+                <div>
                     <h1 className={styles.title}>Add a new transaction</h1>
                     <div className={styles.Form}>
                         <label className={styles.formLabel}>Description</label>
@@ -184,7 +169,7 @@ function AddTransaction({ session }) {
                         <div
                             className={styles.formBtn}
                             onClick={createTransaction}>
-                            <FontAwesomeIcon icon={faPlus} width={"15px"} />
+                            <FontAwesomeIcon icon={faPlus} width={"25px"} />
                         </div>
                     </div>
                 </div>

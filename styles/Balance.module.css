@@ -1,0 +1,145 @@
+@media(max-width:1440px){
+    .totalBalance{
+    display: block;
+    text-align: center;
+    justify-Content: center;
+    align-self: center;
+    font-Size: 30px;
+}
+.subBalancesTitles{
+    font-size: 25px;
+    margin-Left: 50px;
+    margin-Right: 50px;
+    color: rgb(138, 133, 133),
+}
+.subBalanceExpense{
+    font-Size: 20px;
+    margin-top: 5%;
+    color: rgb(255, 0, 0);
+    align-Self: center;
+    text-Align: center;
+}
+.subBalanceIncome{
+    font-Size: 20px;
+    margin-top: 5%;
+    color: rgb(19, 182, 19);
+    align-Self: center;
+    text-Align: center;
+}
+}
+@media(max-width:1024px){
+    .totalBalance{
+    display: block;
+    text-align: center;
+    justify-Content: center;
+    align-self: center;
+    font-Size: 25px;
+}
+.subBalancesTitles{
+    font-size: 20px;
+    margin-Left: 50px;
+    margin-Right: 50px;
+    color: rgb(138, 133, 133),
+}
+.subBalanceExpense{
+    font-Size: 20px;
+    margin-top: 5%;
+    color: rgb(255, 0, 0);
+    align-Self: center;
+    text-Align: center;
+}
+.subBalanceIncome{
+    font-Size: 20px;
+    margin-top: 5%;
+    color: rgb(19, 182, 19);
+    align-Self: center;
+    text-Align: center;
+}
+}
+@media(max-width:768px){
+    .totalBalance{
+    display: block;
+    text-align: center;
+    justify-Content: center;
+    align-self: center;
+    font-Size: 25px;
+}
+.subBalancesTitles{
+    font-size: 20px;
+    margin-Left: 50px;
+    margin-Right: 50px;
+    color: rgb(138, 133, 133),
+}
+.subBalanceExpense{
+    font-Size: 20px;
+    margin-top: 5%;
+    color: rgb(255, 0, 0);
+    align-Self: center;
+    text-Align: center;
+}
+.subBalanceIncome{
+    font-Size: 20px;
+    margin-top: 5%;
+    color: rgb(19, 182, 19);
+    align-Self: center;
+    text-Align: center;
+}
+}
+@media(max-width:425px){
+    .totalBalance{
+    display: block;
+    text-align: center;
+    justify-Content: center;
+    align-self: center;
+    font-Size: 20px;
+}
+.subBalancesTitles{
+    font-size: 15px;
+    margin-Left: 50px;
+    margin-Right: 50px;
+    color: rgb(138, 133, 133),
+}
+.subBalanceExpense{
+    font-Size: 14px;
+    margin-top: 5%;
+    color: rgb(255, 0, 0);
+    align-Self: center;
+    text-Align: center;
+}
+.subBalanceIncome{
+    font-Size: 14px;
+    margin-top: 5%;
+    color: rgb(19, 182, 19);
+    align-Self: center;
+    text-Align: center;
+}
+}
+@media(min-width:2560px){
+    .totalBalance{
+    display: block;
+    text-align: center;
+    justify-Content: center;
+    align-self: center;
+    font-Size: 60px;
+}
+.subBalancesTitles{
+    font-size: 55px;
+    margin-Left: 50px;
+    margin-Right: 50px;
+    color: rgb(138, 133, 133),
+}
+.subBalanceExpense{
+    font-Size: 45px;
+    margin-top: 5%;
+    color: rgb(255, 0, 0);
+    align-Self: center;
+    text-Align: center;
+}
+.subBalanceIncome{
+    font-Size: 45px;
+    margin-top: 5%;
+    color: rgb(19, 182, 19);
+    align-Self: center;
+    text-Align: center;
+}
+}

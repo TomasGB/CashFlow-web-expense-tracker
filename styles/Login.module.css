@@ -22,7 +22,7 @@
   border-radius: 5px;
   backdrop-filter: blur(2px);
   padding: 5%;
-  height: 350px;
+  height: 325px;
 }
 .formLabel{
   display: block;
@@ -48,7 +48,7 @@
   background-color: royalblue;
   border-radius: 5%;
   border: none;
-  padding: 7% 10%;
+  padding: 7% 15%;
   font-weight: 700;
 }
 .formBtn:hover{
@@ -81,7 +81,7 @@
   border-radius: 5px;
   backdrop-filter: blur(2px);
   padding: 5%;
-  height: 500px;
+  height: 450px;
   width: 400px;
 }
 .formLabel{
@@ -110,7 +110,7 @@
   background-color: royalblue;
   border-radius: 5%;
   border: none;
-  padding: 7% 10%;
+  padding: 7% 15%;
   font-weight: 700;
 }
 .formBtn:hover{
@@ -143,7 +143,7 @@
   border-radius: 25px;
   backdrop-filter: blur(2px);
   padding: 10%;
-  height: 1000px;
+  height: 900px;
   width: 800px;
 }
 .formLabel{
@@ -172,7 +172,7 @@
   background-color: royalblue;
   border-radius: 10%;
   border: none;
-  padding: 7% 10%;
+  padding: 7% 15%;
   font-weight: 700;
   font-size: 40px;
 }

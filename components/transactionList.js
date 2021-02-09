@@ -5,6 +5,7 @@ import "firebase/firestore";
 import styles from "../styles/TransactionList.module.css";
 import { faCaretUp, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import TransactionListBlank from "./transactionListBlank";
 
 const TransactionList = (props) => {
     if (props.uid != null) {
@@ -54,74 +55,69 @@ const TransactionList = (props) => {
 
         return (
             <div className={styles.wrapper}>
-                <b style={{ fontSize: "25px" }}>Transaction History</b>
                 <div className={styles.container}>
-                    {transactions.length >= 1
-                        ? transactions.map((transaction, dateId) => {
-                              return (
-                                  <li
-                                      className={styles.transaction}
-                                      key={dateId}>
-                                      <div className={styles.transactionTop}>
-                                          <div
-                                              style={{
-                                                  marginRight: "100px",
-                                                  width: "100px",
-                                              }}>
-                                              <b
-                                                  style={{
-                                                      width: "fit-content",
-                                                  }}>
-                                                  {transaction.description}:
-                                              </b>
-                                          </div>
-                                          <div>
-                                              {transaction.type == "Income" ? (
-                                                  <FontAwesomeIcon
-                                                      icon={faCaretUp}
-                                                      className={
-                                                          styles.ArrowIncome
-                                                      }
-                                                  />
-                                              ) : (
-                                                  <FontAwesomeIcon
-                                                      icon={faCaretUp}
-                                                      className={
-                                                          styles.ArrowExpense
-                                                      }
-                                                  />
-                                              )}
-                                          </div>
-                                      </div>
-                                      <div className={styles.transactionBottom}>
-                                          <ul>
-                                              {transaction.type == "Expense" ? (
-                                                  <li>
-                                                      $ -{transaction.amount}
-                                                  </li>
-                                              ) : (
-                                                  <li>
-                                                      $ {transaction.amount}
-                                                  </li>
-                                              )}
-                                              <li>{transaction.dateString}</li>
-                                          </ul>
-                                          <div
-                                              onClick={() => {
-                                                  deleteTransaction(
-                                                      transaction.id,
-                                                  );
-                                              }}>
-                                              <FontAwesomeIcon
-                                                  icon={faTrash}
-                                                  className={styles.deleteBtn}
-                                              />
-                                          </div>
-                                      </div>
-                                  </li>
-                              );
-                          })
-                        : "No transactions"}
+                    {transactions.length >= 1 ? (
+                        transactions.map((transaction, dateId) => {
+                            return (
+                                <li className={styles.transaction} key={dateId}>
+                                    <div className={styles.transactionTop}>
+                                        <div
+                                            style={{
+                                                marginRight: "100px",
+                                                width: "100px",
+                                            }}>
+                                            <b
+                                                style={{
+                                                    width: "fit-content",
+                                                }}>
+                                                {transaction.description}:
+                                            </b>
+                                        </div>
+                                        <div>
+                                            {transaction.type == "Income" ? (
+                                                <FontAwesomeIcon
+                                                    icon={faCaretUp}
+                                                    className={
+                                                        styles.ArrowIncome
+                                                    }
+                                                />
+                                            ) : (
+                                                <FontAwesomeIcon
+                                                    icon={faCaretUp}
+                                                    className={
+                                                        styles.ArrowExpense
+                                                    }
+                                                />
+                                            )}
+                                        </div>
+                                    </div>
+                                    <div className={styles.transactionBottom}>
+                                        <ul>
+                                            {transaction.type == "Expense" ? (
+                                                <li>$ -{transaction.amount}</li>
+                                            ) : (
+                                                <li>$ {transaction.amount}</li>
+                                            )}
+                                            <li>{transaction.dateString}</li>
+                                        </ul>
+                                        <div
+                                            onClick={() => {
+                                                deleteTransaction(
+                                                    transaction.id,
+                                                );
+                                            }}>
+                                            <FontAwesomeIcon
+                                                icon={faTrash}
+                                                className={styles.deleteBtn}
+                                            />
+                                        </div>
+                                    </div>
+                                </li>
+                            );
+                        })
+                    ) : (
+                        <TransactionListBlank />
+                    )}
                 </div>
                 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
             </div>

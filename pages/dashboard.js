@@ -81,50 +81,39 @@ export default function Dashboard({ session }) {
                             justifyContent: "space-evenly",
                         }}>
                         <h1 className={styles.title}>Hello, {Name}</h1>
-                        <div style={{ display: "flex", marginLeft: "25px" }}>
+                        <div
+                            style={{
+                                display: "flex",
+                                marginLeft: "25px",
+                            }}>
                             <button
                                 type="submit"
                                 className={styles.formBtn}
                                 onClick={loggingOut}>
-                                <p>Log Out</p>
+                                <p className={styles.p}>Log Out</p>
                                 <FontAwesomeIcon
                                     icon={faSignOutAlt}
-                                    style={{
-                                        width: "15px",
-                                        marginLeft: "10px",
-                                        justifyContent: "center",
-                                        alignSelf: "center",
-                                    }}
+                                    className={styles.icons}
                                 />
                             </button>
                             <button
                                 type="submit"
                                 className={styles.formBtn}
                                 onClick={addTransaction}>
-                                <p>Add transaction</p>
+                                <p className={styles.p}>Add transaction</p>
                                 <FontAwesomeIcon
                                     icon={faPlus}
-                                    style={{
-                                        width: "10px",
-                                        marginLeft: "10px",
-                                        justifyContent: "center",
-                                        alignSelf: "center",
-                                    }}
+                                    className={styles.icons}
                                 />
                             </button>
                             <button
                                 type="submit"
                                 className={styles.formBtn}
                                 onClick={goToAnalyticsPage}>
-                                <p>Analytics</p>
+                                <p className={styles.p}>Analytics</p>
                                 <FontAwesomeIcon
                                     icon={faPercent}
-                                    style={{
-                                        width: "10px",
-                                        marginLeft: "10px",
-                                        justifyContent: "center",
-                                        alignSelf: "center",
-                                    }}
+                                    className={styles.icons}
                                 />
                             </button>
                         </div>
@@ -133,11 +122,17 @@ export default function Dashboard({ session }) {
                         {currentUserUID != null ? (
                             <div>
                                 <Balance uid={currentUserUID} />
+                                <b className={styles.subtitle}>
+                                    Transaction History
+                                </b>
                                 <TransactionList uid={currentUserUID} />{" "}
                             </div>
                         ) : (
                             <div>
                                 <BalanceBlank />
+                                <b className={styles.subtitle}>
+                                    Transaction History
+                                </b>
                                 <TransactionListBlank />
                             </div>
                         )}

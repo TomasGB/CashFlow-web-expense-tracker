@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import Styles from "../styles/Balance.module.css";
 
 function BalanceBlank() {
     return (
@@ -18,22 +19,8 @@ function BalanceBlank() {
                     color: "#000",
                 }}>
                 <div>
-                    <b
-                        style={{
-                            display: "block",
-                            textAlign: "center",
-                            justifyContent: "center",
-                            fontSize: 24,
-                        }}>
-                        Your Balance
-                    </b>
-                    <h2
-                        style={{
-                            display: "block",
-                            textAlign: "center",
-                        }}>
-                        $
-                    </h2>
+                    <b className={Styles.totalBalance}>Your Balance</b>
+                    <h2 className={Styles.totalBalance}>$</h2>
                 </div>
             </div>
             <div
@@ -49,38 +36,12 @@ function BalanceBlank() {
                         alignSelf: "center",
                         textAlign: "center",
                     }}>
-                    <div
-                        style={{
-                            fontSize: 18,
-                            marginLeft: 15,
-                            marginRight: 15,
-                            color: "grey",
-                        }}>
-                        Income
-                    </div>
-                    <div
-                        style={{
-                            fontSize: 16,
-                            color: "green",
-                        }}>{`+  `}</div>
+                    <div className={Styles.subBalancesTitles}>Income</div>
+                    <div className={Styles.subBalanceIncome}>{`+  `}</div>
                 </div>
                 <div>
-                    <div
-                        style={{
-                            fontSize: 18,
-                            marginLeft: 15,
-                            marginRight: 15,
-                            color: "grey",
-                        }}>
-                        Expenses
-                    </div>
-                    <div
-                        style={{
-                            fontSize: 16,
-                            color: "red",
-                            alignSelf: "center",
-                            textAlign: "center",
-                        }}>{`- `}</div>
+                    <div className={Styles.subBalancesTitles}>Expenses</div>
+                    <div className={Styles.subBalanceExpense}>{`- `}</div>
                 </div>
             </div>
         </div>

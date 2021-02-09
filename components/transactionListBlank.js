@@ -4,10 +4,6 @@ import "firebase/firestore";
 import styles from "../styles/TransactionList.module.css";
 
 const TransactionListBlank = () => {
-    return (
-        <div className={styles.wrapper}>
-            <b style={{ fontSize: "25px" }}>Transaction History</b>
-        </div>
-    );
+    return <div className={styles.wrapper}></div>;
 };
 export default TransactionListBlank;

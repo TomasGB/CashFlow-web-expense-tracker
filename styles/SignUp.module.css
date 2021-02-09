@@ -1,4 +1,4 @@
-@media (max-width: 425px){
+@media (max-width: 426px){
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -22,7 +22,7 @@
   border-radius: 5px;
   backdrop-filter: blur(2px);
   padding: 5%;
-  height: 300px;
+  height: 200px;
 }
 .formLabel{
   display: block;
@@ -50,7 +50,7 @@
   background-color: royalblue;
   border-radius: 5%;
   border: none;
-  padding: 7% 10%;
+  padding: 7% 15%;
   font-weight: 700;
 }
 .formBtn:hover{
@@ -110,7 +110,7 @@
   background-color: royalblue;
   border-radius: 5%;
   border: none;
-  padding: 7% 10%;
+  padding: 7% 15%;
   font-weight: 700;
 }
 .formBtn:hover{
@@ -172,7 +172,7 @@
   background-color: royalblue;
   border-radius: 5%;
   border: none;
-  padding: 6% 8%;
+  padding: 7% 15%;
   font-weight: 700;
   font-size: 14px;
 }
@@ -206,7 +206,7 @@
   border-radius: 25px;
   backdrop-filter: blur(2px);
   padding: 10%;
-  height: 1300px;
+  height: 1200px;
   width: 800px;
 }
 .formLabel{

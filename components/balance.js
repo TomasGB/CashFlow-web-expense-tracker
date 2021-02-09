@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Styles from "../styles/Balance.module.css";
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
@@ -56,28 +57,14 @@ function Balance(props) {
                         color: "#000",
                     }}>
                     <div>
-                        <b
-                            style={{
-                                display: "block",
-                                textAlign: "center",
-                                justifyContent: "center",
-                                fontSize: 24,
-                            }}>
-                            Your Balance
-                        </b>
-                        <h2
-                            style={{
-                                display: "block",
-                                textAlign: "center",
-                            }}>
-                            $ {balance}
-                        </h2>
+                        <b className={Styles.totalBalance}>Your Balance</b>
+                        <h2 className={Styles.totalBalance}>$ {balance}</h2>
                     </div>
                 </div>
                 <div
                     style={{
-                        marginTop: 20,
-                        marginBottom: 20,
+                        marginTop: 30,
+                        marginBottom: 30,
                         display: "inline-flex",
                         alignSelf: "center",
                     }}>
@@ -87,38 +74,18 @@ function Balance(props) {
                             alignSelf: "center",
                             textAlign: "center",
                         }}>
+                        <div className={Styles.subBalancesTitles}>Income</div>
                         <div
-                            style={{
-                                fontSize: 18,
-                                marginLeft: 15,
-                                marginRight: 15,
-                                color: "grey",
-                            }}>
-                            Income
-                        </div>
-                        <div
-                            style={{
-                                fontSize: 16,
-                                color: "green",
-                            }}>{`+ ${totIncome}`}</div>
+                            className={
+                                Styles.subBalanceIncome
+                            }>{`+ $${totIncome}`}</div>
                     </div>
                     <div>
+                        <div className={Styles.subBalancesTitles}>Expense</div>
                         <div
-                            style={{
-                                fontSize: 18,
-                                marginLeft: 15,
-                                marginRight: 15,
-                                color: "grey",
-                            }}>
-                            Expenses
-                        </div>
-                        <div
-                            style={{
-                                fontSize: 16,
-                                color: "red",
-                                alignSelf: "center",
-                                textAlign: "center",
-                            }}>{`- ${totExpense}`}</div>
+                            className={
+                                Styles.subBalanceExpense
+                            }>{`- $${totExpense}`}</div>
                     </div>
                 </div>
             </div>
