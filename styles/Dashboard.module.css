@@ -1,4 +1,4 @@
-@media (max-width:426px){
+@media (max-width:1440px){
   .container {
   min-height: 100vh;
   width: 100%;
@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
   overflow-x: hidden;
   padding-left: 2%;
@@ -15,6 +15,134 @@
 }
 .wrapper{
   margin-top: 30px;
+  background-color: #ffffff;
+  justify-content: center;
+  align-self: center;
+  width: 100vw;
+  min-height:100vh;
+  padding:5% 2%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow-x: hidden;
+}
+.title{
+  text-align: start;
+  margin-left: 25px;
+  }
+.h5 {
+  text-align: center;
+}
+.subtitle {
+  font-size: 25px;
+}
+.formBtn{
+  margin-top: 10px;
+  width: fit-content;
+  justify-content: center;
+  align-self: center;
+  background-color:rgba(96, 131, 235, 0.616);
+  border-radius: 5%;
+  border: none;
+  padding: 0.5% 1% ;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+}
+.formBtn:hover{
+  background-color: #4479c9;
+  cursor: pointer;
+}
+.p{
+  font-size: 1.25rem;
+}
+.icons{
+  width: 15px;
+  margin-Left: 10px;
+  justify-Content: center;
+  align-Self: center;
+}
+}
+@media (max-width:768px){
+  .container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#4083E6,#0645A3);
+  font-family: Helvetica;
+  overflow-x: hidden;
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+.wrapper{
+  margin-top: 50px;
+  background-color: #ffffff;
+  justify-content: center;
+  align-self: center;
+  width: 100vw;
+  min-height:100vh;
+  padding:5% 2%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow-x: hidden;
+}
+.title{
+  text-align: start;
+  margin-left: 25px;
+  }
+.h5 {
+  text-align: center;
+}
+.wrapper .subtitle {
+  font-size: 20px;
+}
+.formBtn{
+  margin-top: 10px;
+  width: fit-content;
+  justify-content: center;
+  align-self: center;
+  background-color: rgba(96, 131, 235, 0.616);
+  border-radius: 5%;
+  border: none;
+  padding: 0.5% 1% ;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+}
+.formBtn:hover{
+  background-color: #4479c9;
+  cursor: pointer;
+}
+.formBtn .p{
+  font-size: 0.75rem;
+}
+.icons{
+  width: 15px;
+  margin-Left: 10px;
+  justify-Content: center;
+  align-Self: center;
+}
+}
+@media (max-width:426px){
+  .container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#4083E6,#0645A3);
+  font-family: Helvetica;
+  overflow-x: hidden;
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+.wrapper{
+  margin-top: 60px;
   background-color: #ffffff;
   justify-content: center;
   align-self: center;
@@ -41,7 +169,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: royalblue;
+  background-color: rgba(96, 131, 235, 0.616);
   border-radius: 5%;
   border: none;
   padding: 0.5% 1% ;
@@ -50,139 +178,11 @@
   flex-direction: row;
 }
 .formBtn:hover{
-  background-color: rgba(96, 131, 235, 0.616);
+  background-color: #4479c9;
   cursor: pointer;
 }
 .p{
   font-size: 14px;
-}
-.icons{
-  width: 15px;
-  margin-Left: 10px;
-  justify-Content: center;
-  align-Self: center;
-}
-}
-@media (max-width:768px){
-  .container {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: royalblue;
-  font-family: Helvetica;
-  overflow-x: hidden;
-  padding-left: 2%;
-  padding-right: 2%;
-
-}
-.wrapper{
-  margin-top: 30px;
-  background-color: #ffffff;
-  justify-content: center;
-  align-self: center;
-  width: 100vw;
-  min-height:100vh;
-  padding:5% 2%;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  overflow-x: hidden;
-}
-.title{
-  text-align: start;
-  margin-left: 25px;
-  }
-.h5 {
-  text-align: center;
-}
-.wrapper .subtitle {
-  font-size: 20px;
-}
-.formBtn{
-  margin-top: 10px;
-  width: fit-content;
-  justify-content: center;
-  align-self: center;
-  background-color: royalblue;
-  border-radius: 5%;
-  border: none;
-  padding: 0.5% 1% ;
-  font-weight: 700;
-  display: flex;
-  flex-direction: row;
-}
-.formBtn:hover{
-  background-color: rgba(96, 131, 235, 0.616);
-  cursor: pointer;
-}
-.formBtn .p{
-  font-size: 0.75rem;
-}
-.icons{
-  width: 15px;
-  margin-Left: 10px;
-  justify-Content: center;
-  align-Self: center;
-}
-}
-@media (max-width:1440px){
-  .container {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: royalblue;
-  font-family: Helvetica;
-  overflow-x: hidden;
-  padding-left: 2%;
-  padding-right: 2%;
-
-}
-.wrapper{
-  margin-top: 30px;
-  background-color: #ffffff;
-  justify-content: center;
-  align-self: center;
-  width: 100vw;
-  min-height:100vh;
-  padding:5% 2%;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  overflow-x: hidden;
-}
-.title{
-  text-align: start;
-  margin-left: 25px;
-  }
-.h5 {
-  text-align: center;
-}
-.subtitle {
-  font-size: 25px;
-}
-.formBtn{
-  margin-top: 10px;
-  width: fit-content;
-  justify-content: center;
-  align-self: center;
-  background-color: royalblue;
-  border-radius: 5%;
-  border: none;
-  padding: 0.5% 1% ;
-  font-weight: 700;
-  display: flex;
-  flex-direction: row;
-}
-.formBtn:hover{
-  background-color: rgba(96, 131, 235, 0.616);
-  cursor: pointer;
-}
-.p{
-  font-size: 1.25rem;
 }
 .icons{
   width: 15px;
@@ -199,7 +199,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
   overflow-x: hidden;
   padding-left: 2%;
@@ -234,7 +234,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: royalblue;
+  background-color: rgba(96, 131, 235, 0.616);
   border-radius: 5%;
   border: none;
   padding: 0.5% 1% ;
@@ -243,7 +243,7 @@
   flex-direction: row;
 }
 .formBtn:hover{
-  background-color: rgba(96, 131, 235, 0.616);
+  background-color: #4479c9;
   cursor: pointer;
 }
 .p{

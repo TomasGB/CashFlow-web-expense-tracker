@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
 .title {
@@ -47,7 +47,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: royalblue;
+  background-color: #4083E6;
   border-radius: 5%;
   border: none;
   padding: 7% 15%;
@@ -66,7 +66,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
 .title {
@@ -107,7 +107,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: royalblue;
+  background-color: #4083E6;
   border-radius: 5%;
   border: none;
   padding: 7% 15%;
@@ -126,7 +126,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
   .title {
@@ -169,7 +169,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: royalblue;
+  background-color: #4083E6;
   border-radius: 5%;
   border: none;
   padding: 7% 15%;
@@ -189,7 +189,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
   .title {
@@ -232,7 +232,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: royalblue;
+  background: linear-gradient(#4083E6,#0645A3);
   border-radius: 10%;
   border: none;
   padding: 7% 10%;

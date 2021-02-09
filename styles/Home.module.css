@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
 .title {
@@ -33,7 +33,7 @@
 .linkBtn {
   padding: 2%;
 
-  background-color: rgba(56, 103, 204, 0.795);
+  background-color: #266BD1;
   width: 100px;
   text-align: center;
   margin: 0% 5%;
@@ -78,7 +78,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
 .title {
@@ -105,7 +105,7 @@
 }
 .linkBtn {
   padding: 2%;
-  background-color: rgba(56, 103, 204, 0.795);
+  background-color: #266BD1;
   width: 150px;
   text-align: center;
   margin: 0% 5%;
@@ -126,7 +126,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
 .title {
@@ -153,7 +153,7 @@
 }
 .linkBtn {
   padding: 2% 5%;
-  background-color: rgba(56, 103, 204, 0.795);
+  background-color: #266BD1;
   width: 300px;
   text-align: center;
   margin: 0% 5%;

@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background-color: #266BD1;
   font-family: Helvetica;
 }
 .title {
@@ -45,10 +45,10 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: royalblue;
+  background-color: #266BD1;
   border-radius: 5%;
   border: none;
-  padding: 7% 15%;
+  padding: 6% 15%;
   font-weight: 700;
 }
 .formBtn:hover{
@@ -64,7 +64,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background-color: #266BD1;
   font-family: Helvetica;
 }
   .title {
@@ -81,8 +81,8 @@
   border-radius: 5px;
   backdrop-filter: blur(2px);
   padding: 5%;
-  height: 450px;
-  width: 400px;
+  height: 400px;
+  width: 350px;
 }
 .formLabel{
   display: block;
@@ -94,7 +94,7 @@
   font-size: 24px;
   display: block;
   margin: 6% 4%;
-  padding: 7%;
+  padding: 5%;
   border-top: none; 
   border-left: none;
   border-right: none;
@@ -107,10 +107,10 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: royalblue;
+  background-color: #266BD1;
   border-radius: 5%;
   border: none;
-  padding: 7% 15%;
+  padding: 4% 15%;
   font-weight: 700;
 }
 .formBtn:hover{
