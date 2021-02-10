@@ -49,7 +49,7 @@ function AddTransaction({ session }) {
             let minutes = today.getMinutes();
 
             if (month < 10) {
-                month = "0" + month;
+                month = "0" + (month + 1);
             }
             if (day < 10) {
                 day = "0" + day;
