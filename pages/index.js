@@ -31,6 +31,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <div style={{ justifyContent: "center", marginTop: 15 }}>
+                <p>© Tomas Gomez Bermudez</p>
+            </div>
         </div>
     );
 }

@@ -40,7 +40,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color:rgba(96, 131, 235, 0.616);
+  background-color: transparent;
   border-radius: 5%;
   border: none;
   padding: 0.5% 1% ;
@@ -104,7 +104,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: rgba(96, 131, 235, 0.616);
+  background-color: transparent;
   border-radius: 5%;
   border: none;
   padding: 0.5% 1% ;
@@ -169,7 +169,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: rgba(96, 131, 235, 0.616);
+  background-color: transparent;
   border-radius: 5%;
   border: none;
   padding: 0.5% 1% ;
@@ -234,7 +234,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: rgba(96, 131, 235, 0.616);
+  background-color: transparent;
   border-radius: 5%;
   border: none;
   padding: 0.5% 1% ;
