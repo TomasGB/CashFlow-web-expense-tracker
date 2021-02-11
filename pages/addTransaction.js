@@ -41,6 +41,7 @@ function AddTransaction({ session }) {
         });
         console.log(state);
         const createTransaction = async () => {
+            let date = Date.now();
             let today = new Date();
             let year = today.getFullYear();
             let month = today.getMonth();
@@ -89,7 +90,7 @@ function AddTransaction({ session }) {
                         Description: state.Description,
                         Amount: state.Amount,
                         Type: state.Type,
-                        dateId: today,
+                        dateId: date,
                         DateString: dateString,
                         Category: category,
                     });
