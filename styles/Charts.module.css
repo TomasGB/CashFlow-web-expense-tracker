@@ -3,23 +3,26 @@
     margin: 25px 0px;
 }
 .Category{
-    color: "#ffffff";
     margin: 5%;
+    width: 100%;
     justify-content: center;
-    align-self: center;
+    align-self: baseline;
 }
 .Icons{
     width: 25px;
+    margin-left: 30%;
+    justify-content: center;
+    align-self:center;
 }
-.TitleText{align-Self: "flex-start";
-    color: "#000000";
+.TitleText{
+    text-align: center;
+    color: #000000;
     font-Size: 16;
-    font-Weight: "700";
-    margin-Left: 5;
+    font-Weight: 700;
+    margin-Left: 5px;
 }
 .Text{
-    align-Self: "center";
-    color: "#ffffff";
+    text-align: center;
     margin-bottom: 2px;
     margin-top: 2px;
 }

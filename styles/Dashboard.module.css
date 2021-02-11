@@ -35,8 +35,14 @@
 .subtitle {
   font-size: 25px;
 }
+.navbar{
+  display: flex;
+  margin-Left: 25px;
+  width: 50%;
+}
 .formBtn{
   margin-top: 10px;
+  margin-right: auto;
   width: fit-content;
   justify-content: center;
   align-self: center;
@@ -96,11 +102,17 @@
 .h5 {
   text-align: center;
 }
+.navbar{
+  display: flex;
+  margin-Left: 25px;
+  width: 50%;
+}
 .wrapper .subtitle {
   font-size: 20px;
 }
 .formBtn{
   margin-top: 10px;
+  margin-right: auto;
   width: fit-content;
   justify-content: center;
   align-self: center;
@@ -161,11 +173,17 @@
 .h5 {
   text-align: center;
 }
+.navbar{
+  display: flex;
+  margin-Left: 25px;
+  width: 90%;
+}
 .subtitle {
   font-size: 25px;
 }
 .formBtn{
   margin-top: 10px;
+  margin-right: auto;
   width: fit-content;
   justify-content: center;
   align-self: center;
@@ -231,6 +249,7 @@
 }
 .formBtn{
   margin-top: 10px;
+  margin-right: auto;
   width: fit-content;
   justify-content: center;
   align-self: center;

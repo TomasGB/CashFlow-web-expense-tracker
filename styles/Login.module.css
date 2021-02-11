@@ -23,17 +23,17 @@
   border-radius: 5px;
   backdrop-filter: blur(2px);
   padding: 5%;
-  height: 400px;
+  height: 350px;
   width: 350px;
 }
 .formLabel{
   display: block;
   margin: 2%;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
 }
 .formInput{
-  font-size: 24px;
+  font-size: 18px;
   display: block;
   margin: 6% 4%;
   padding: 5%;
@@ -41,11 +41,11 @@
   border-left: none;
   border-right: none;
   border-radius: 5px;
-  height: 25px;
+  height: 18px;
   background-color: none;
 }
 .formBtn{
-  margin-top: 60px;
+  margin-top: 40px;
   width: fit-content;
   justify-content: center;
   align-self: center;
@@ -85,19 +85,19 @@
   border-radius: 5px;
   backdrop-filter: blur(2px);
   padding: 5%;
-  height: 400px;
+  height: 300px;
   width: 350px;
 }
 .formLabel{
   display: block;
   margin: 2%;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
 }
 .formInput{
-  font-size: 24px;
+  font-size: 16px;
   display: block;
-  margin: 6% 4%;
+  margin: 4% 2%;
   padding: 5%;
   border-top: none; 
   border-left: none;
@@ -107,7 +107,7 @@
   background-color: none;
 }
 .formBtn{
-  margin-top: 60px;
+  margin-top: 40px;
   width: fit-content;
   justify-content: center;
   align-self: center;
@@ -144,17 +144,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-self: center;
   border-radius: 5px;
   backdrop-filter: blur(2px);
   padding: 5%;
-  height: 375px;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 250px;
 }
 .formLabel{
   display: block;
   margin: 2%;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 .formInput{
   display: block;
@@ -166,10 +169,10 @@
   border-radius: 5px;
   height: 25px;
   background-color: none;
-  font-size: 18px;
+  font-size: 14px;
 }
 .formBtn{
-  margin-top: 40px;
+  margin-top: 30px;
   width: fit-content;
   justify-content: center;
   align-self: center;
@@ -184,9 +187,8 @@
   cursor: pointer;
 }
 }
-
 @media (min-width: 2560px){
-  .container {
+.container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -196,7 +198,7 @@
   background-color: royalblue;
   font-family: Helvetica;
 }
-  .title {
+.title {
   text-align: center;
   color: #ffffff;
   margin-top: 5%;
@@ -210,20 +212,20 @@
   border-radius: 25px;
   backdrop-filter: blur(2px);
   padding: 10%;
-  height: 900px;
+  height: 800px;
   width: 800px;
 }
 .formLabel{
   display: block;
   margin: 2%;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 46px;
 }
 .formInput{
-  font-size: 40px;
+  font-size: 38px;
   display: block;
-  margin: 6% 4%;
-  padding: 7%;
+  margin: 6% 2%;
+  padding: 6%;
   border-top: none; 
   border-left: none;
   border-right: none;
@@ -239,7 +241,7 @@
   background-color: royalblue;
   border-radius: 10%;
   border: none;
-  padding: 7% 15%;
+  padding: 6% 18%;
   font-weight: 700;
   font-size: 40px;
 }

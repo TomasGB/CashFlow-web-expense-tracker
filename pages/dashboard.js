@@ -12,7 +12,7 @@ import IncomeChart from "../components/incomeChart";
 import ExpenseChart from "../components/expenseChart";
 import BlankChart from "../components/blankCharts";
 import {
-    faPercent,
+    faChartBar,
     faPlus,
     faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
@@ -82,21 +82,7 @@ export default function Dashboard({ session }) {
                             justifyContent: "space-evenly",
                         }}>
                         <h1 className={styles.title}>Hello, {Name}</h1>
-                        <div
-                            style={{
-                                display: "flex",
-                                marginLeft: "25px",
-                            }}>
-                            <button
-                                type="submit"
-                                className={styles.formBtn}
-                                onClick={loggingOut}>
-                                <p className={styles.p}>Log Out</p>
-                                <FontAwesomeIcon
-                                    icon={faSignOutAlt}
-                                    className={styles.icons}
-                                />
-                            </button>
+                        <div className={styles.navbar}>
                             <button
                                 type="submit"
                                 className={styles.formBtn}
@@ -113,7 +99,17 @@ export default function Dashboard({ session }) {
                                 onClick={goToAnalyticsPage}>
                                 <p className={styles.p}>Analytics</p>
                                 <FontAwesomeIcon
-                                    icon={faPercent}
+                                    icon={faChartBar}
+                                    className={styles.icons}
+                                />
+                            </button>
+                            <button
+                                type="submit"
+                                className={styles.formBtn}
+                                onClick={loggingOut}>
+                                <p className={styles.p}>Log Out</p>
+                                <FontAwesomeIcon
+                                    icon={faSignOutAlt}
                                     className={styles.icons}
                                 />
                             </button>

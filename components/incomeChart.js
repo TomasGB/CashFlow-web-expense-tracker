@@ -6,7 +6,7 @@ import styles from "../styles/Charts.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faQuestion,
-    faCashRegister,
+    faMoneyBillWave,
     faFolder,
 } from "@fortawesome/free-solid-svg-icons";
 import { Pie } from "react-chartjs-2";
@@ -114,7 +114,9 @@ export default function IncomeChart(props) {
                                 />
                                 <div className={styles.TitleText}>Work</div>
                             </div>
-                            <div>${workIncome.toFixed(2)}</div>
+                            <div className={styles.Text}>
+                                ${workIncome.toFixed(2)}
+                            </div>
                         </div>
                         <div className={styles.Category}>
                             <div
@@ -124,14 +126,16 @@ export default function IncomeChart(props) {
                                     flexDirection: "row",
                                 }}>
                                 <FontAwesomeIcon
-                                    icon={faCashRegister}
+                                    icon={faMoneyBillWave}
                                     className={styles.Icons}
                                 />
                                 <div className={styles.TitleText}>
                                     Investments
                                 </div>
                             </div>
-                            <div>${investmensIncome.toFixed(2)}</div>
+                            <div className={styles.Text}>
+                                ${investmensIncome.toFixed(2)}
+                            </div>
                         </div>
                         <div className={styles.Category}>
                             <div
@@ -146,7 +150,9 @@ export default function IncomeChart(props) {
                                 />
                                 <div className={styles.TitleText}>Others</div>
                             </div>
-                            <div>${otherIncome.toFixed(2)}</div>
+                            <div className={styles.Text}>
+                                ${otherIncome.toFixed(2)}
+                            </div>
                         </div>
                     </div>
                     <div style={{ marginTop: 15 }}></div>
