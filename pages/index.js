@@ -8,16 +8,24 @@ import { useAuth } from "../services/auth";
 export default function Home() {
     const { user } = useAuth();
     return (
-        <div className={styles.container}>
+        <main className={styles.container}>
             <Head>
                 <title>CashFlow</title>
                 <link rel="icon" href="/favicon.ico" />
-                <meta name="theme-color" content="#266BD1" />
+                <meta name="theme-color" content="#4083E6" />
+                <meta
+                    name="description"
+                    content="Personal finance app, to keep track of your incomes and expenses."
+                />
             </Head>
             <div>
                 <h1 className={styles.title}>Welcome to CashFlow!</h1>
                 <div className={styles.logoWrapper}>
-                    <img className={styles.logo} src="logo.png" />
+                    <img
+                        className={styles.logo}
+                        src="logo.png"
+                        alt="CashFlow-App-Logo"
+                    />
                 </div>
                 <h4 className={styles.phrase}>
                     Please login or sign up to start
@@ -32,8 +40,8 @@ export default function Home() {
                 </div>
             </div>
             <div style={{ justifyContent: "center", marginTop: 15 }}>
-                <p>© Tomas Gomez Bermudez</p>
+                <p className={styles.copyright}>© Tomas Gomez Bermudez</p>
             </div>
-        </div>
+        </main>
     );
 }

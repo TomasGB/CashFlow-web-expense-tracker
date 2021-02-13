@@ -68,11 +68,15 @@ export default function Dashboard({ session }) {
             getUserInfo();
         });
         return (
-            <div className={styles.container}>
+            <main className={styles.container}>
                 <Head>
                     <title>Dashboard | CashFlow</title>
                     <link rel="icon" href="/favicon.ico" />
-                    <meta name="theme-color" content="#266BD1" />
+                    <meta name="theme-color" content="#4083E6" />
+                    <meta
+                        name="description"
+                        content="Personal finance app, to keep track of your incomes and expenses."
+                    />
                 </Head>
                 <div>
                     <div
@@ -82,7 +86,7 @@ export default function Dashboard({ session }) {
                             justifyContent: "space-evenly",
                         }}>
                         <h1 className={styles.title}>Hello, {Name}</h1>
-                        <div className={styles.navbar}>
+                        <nav className={styles.navbar}>
                             <button
                                 type="submit"
                                 className={styles.formBtn}
@@ -113,7 +117,7 @@ export default function Dashboard({ session }) {
                                     className={styles.icons}
                                 />
                             </button>
-                        </div>
+                        </nav>
                     </div>
                     <div className={styles.wrapper}>
                         {currentUserUID != null ? (
@@ -148,10 +152,10 @@ export default function Dashboard({ session }) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
         );
     } else {
-        return <h1>Loading</h1>;
+        Router.push("/login");
     }
 
     async function loggingOut() {
@@ -169,6 +173,6 @@ export default function Dashboard({ session }) {
         Router.push("/addTransaction");
     }
     function goToAnalyticsPage() {
-        Router.push("/analytics");
+        Router.push("/analyticsPage");
     }
 }

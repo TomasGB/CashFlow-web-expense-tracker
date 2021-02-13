@@ -46,11 +46,15 @@ export default function LoginPage() {
     };
 
     return (
-        <div className={styles.container}>
+        <main className={styles.container}>
             <Head>
                 <title>Login | CashFlow</title>
                 <link rel="icon" href="/favicon.ico" />
-                <meta name="theme-color" content="#266BD1" />
+                <meta name="theme-color" content="#4083E6" />
+                <meta
+                    name="description"
+                    content="Personal finance app, to keep track of your incomes and expenses."
+                />
             </Head>
             <div>
                 <h1 className={styles.title}>Login to CashFlow!</h1>
@@ -81,6 +85,6 @@ export default function LoginPage() {
                     </button>
                 </div>
             </div>
-        </div>
+        </main>
     );
 }

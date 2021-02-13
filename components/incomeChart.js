@@ -156,13 +156,8 @@ export default function IncomeChart(props) {
                         </div>
                     </div>
                     <div style={{ marginTop: 15 }}></div>
-                    <div
-                        style={{
-                            width: "300px",
-                            justifyContent: "center",
-                            alignSelf: "center",
-                        }}>
-                        <Pie data={data} width={400} height={400} />
+                    <div className={styles.chartArea}>
+                        <Pie data={data} width={300} height={300} />
                     </div>
                 </div>
             </div>

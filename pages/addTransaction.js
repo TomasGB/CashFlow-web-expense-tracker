@@ -10,7 +10,8 @@ import Router from "next/router";
 import Head from "next/head";
 import styles from "../styles/AddTransaction.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import Loading from "./loadingPage";
 
 export async function getServerSideProps(context) {
     try {
@@ -100,11 +101,15 @@ function AddTransaction({ session }) {
         };
 
         return (
-            <div className={styles.container}>
+            <main className={styles.container}>
                 <Head>
                     <title>Add Transaction | CashFlow</title>
                     <link rel="icon" href="/favicon.ico" />
-                    <meta name="theme-color" content="#266BD1" />
+                    <meta name="theme-color" content="#4083E6" />
+                    <meta
+                        name="description"
+                        content="Personal finance app, to keep track of your incomes and expenses."
+                    />
                 </Head>
                 <div>
                     <h1 className={styles.title}>Add a new transaction</h1>
@@ -175,10 +180,10 @@ function AddTransaction({ session }) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
         );
     } else {
-        return null;
+        return <Loading />;
     }
 }
 export default AddTransaction;

@@ -129,7 +129,9 @@ export default function ExpenseChart(props) {
                                 />
                                 <div className={styles.TitleText}>Bills</div>
                             </div>
-                            <div>${billsExpense.toFixed(2)}</div>
+                            <div className={styles.Text}>
+                                ${billsExpense.toFixed(2)}
+                            </div>
                         </div>
                         <div className={styles.Category}>
                             <div
@@ -144,7 +146,9 @@ export default function ExpenseChart(props) {
                                 />
                                 <div className={styles.TitleText}>Food</div>
                             </div>
-                            <div>${foodExpense.toFixed(2)}</div>
+                            <div className={styles.Text}>
+                                ${foodExpense.toFixed(2)}
+                            </div>
                         </div>
                         <div className={styles.Category}>
                             <div
@@ -159,7 +163,9 @@ export default function ExpenseChart(props) {
                                 />
                                 <div className={styles.TitleText}>Car</div>
                             </div>
-                            <div>${carExpense.toFixed(2)}</div>
+                            <div className={styles.Text}>
+                                ${carExpense.toFixed(2)}
+                            </div>
                         </div>
                         <div className={styles.Category}>
                             <div
@@ -174,16 +180,13 @@ export default function ExpenseChart(props) {
                                 />
                                 <div className={styles.TitleText}>Others</div>
                             </div>
-                            <div>${otherExpense.toFixed(2)}</div>
+                            <div className={styles.Text}>
+                                ${otherExpense.toFixed(2)}
+                            </div>
                         </div>
                     </div>
                     <div style={{ marginTop: 15 }}></div>
-                    <div
-                        style={{
-                            width: "300px",
-                            justifyContent: "center",
-                            alignSelf: "center",
-                        }}>
+                    <div className={styles.chartArea}>
                         <Pie data={data} width={400} height={400} />
                     </div>
                 </div>

@@ -66,11 +66,15 @@ export default function SignUpPage() {
     };
 
     return (
-        <div className={styles.container}>
+        <main className={styles.container}>
             <Head>
                 <title>Sign up | CashFlow</title>
                 <link rel="icon" href="/favicon.ico" />
-                <meta name="theme-color" content="#266BD1" />
+                <meta name="theme-color" content="#4083E6" />
+                <meta
+                    name="description"
+                    content="Personal finance app, to keep track of your incomes and expenses."
+                />
             </Head>
             <div>
                 <h1 className={styles.title}>Sign Up to CashFlow!</h1>
@@ -119,6 +123,6 @@ export default function SignUpPage() {
                     </button>
                 </div>
             </div>
-        </div>
+        </main>
     );
 }
