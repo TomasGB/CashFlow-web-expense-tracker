@@ -1,3 +1,32 @@
+@media(max-width:2559px){
+.totalBalance{
+    display: block;
+    text-align: center;
+    justify-Content: center;
+    align-self: center;
+    font-Size: 45px;
+}
+.subBalancesTitles{
+    font-size: 35px;
+    margin-Left: 50px;
+    margin-Right: 50px;
+    color: rgb(138, 133, 133),
+}
+.subBalanceExpense{
+    font-Size: 35px;
+    margin-top: 5%;
+    color: rgb(255, 0, 0);
+    align-Self: center;
+    text-Align: center;
+}
+.subBalanceIncome{
+    font-Size: 35px;
+    margin-top: 5%;
+    color: rgb(19, 182, 19);
+    align-Self: center;
+    text-Align: center;
+}
+}
 @media(max-width:1440px){
     .totalBalance{
     display: block;

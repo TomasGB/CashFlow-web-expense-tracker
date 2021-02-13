@@ -1,3 +1,75 @@
+@media(max-width:2559px){
+.IncomeTitle{
+    font-size: 50px;
+    margin: 25px 0px;
+}
+.Category{
+    margin: 5%;
+    justify-content: center;
+    align-self: baseline;
+    font-Size: 30px;
+}
+.Icons{
+    width: 65px;
+}
+.TitleText{
+    align-Self: center;
+    color: #000000;
+    font-Size: 35px;
+    font-Weight: 700;
+    margin-top: 25px;
+}
+.Text{
+    font-Size: 35px;
+    align-Self: center;
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+.chartArea{
+    width: 300px;
+    justify-Content: center;
+    align-Self: center;
+}
+
+}
+@media(max-width:1440px){
+    .IncomeTitle{
+    font-size: 25px;
+    margin: 25px 0px;
+}
+.Category{
+    margin: 5%;
+    width: 100%;
+    justify-content: center;
+    align-self: baseline;
+}
+.Icons{
+    width: 35px;
+    margin-left: 30%;
+    justify-content: center;
+    align-self:center;
+}
+.TitleText{
+    text-align: center;
+    color: #000000;
+    font-Size: 20px;
+    font-Weight: 700;
+    margin-Left: 5px;
+    margin-top: 15px;
+}
+.Text{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+.chartArea{
+    width: 300px;
+    justify-Content: center;
+    align-Self: center;
+}
+}
+@media(max-width:768px){
 .IncomeTitle{
     font-size: 25px;
     margin: 25px 0px;
@@ -17,14 +89,59 @@
 .TitleText{
     text-align: center;
     color: #000000;
-    font-Size: 16;
+    font-Size: 18px;
     font-Weight: 700;
     margin-Left: 5px;
+    margin-top: 15px;
 }
 .Text{
     text-align: center;
+    font-size: 18px;
     margin-bottom: 2px;
-    margin-top: 2px;
+    margin-top: 15px;
+}
+.chartArea{
+    width: 300px;
+    justify-Content: center;
+    align-Self: center;
+}
+}
+@media(max-width:425px){
+.IncomeTitle{
+    font-size: 25px;
+    margin: 25px 0px;
+}
+.Category{
+    margin: 5%;
+    width: 100%;
+    justify-content: center;
+    align-self: baseline;
+}
+.Icons{
+    width: 25px;
+    margin-left: 30%;
+    justify-content: center;
+    align-self:center;
+}
+.TitleText{
+    text-align: center;
+    color: #000000;
+    font-Size: 14px;
+    font-Weight: 700;
+    margin-Left: 5px;
+    margin-top: 15px;
+}
+.Text{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+.chartArea{
+    width: 300px;
+    justify-Content: center;
+    align-Self: center;
+}
 }
 
 @media(min-width:2560px){
@@ -33,28 +150,31 @@
     margin: 25px 0px;
 }
 .Category{
-    color: "#ffffff";
     margin: 5%;
     justify-content: center;
-    align-self: center;
+    align-self: baseline;
     font-Size: 30px;
 }
 .Icons{
-    width: 50px;
+    width: 65px;
 }
-.TitleText{align-Self: "flex-start";
-    color: "#000000";
-    font-Size: 25px;
-    font-Weight: "700";
-    margin-Left: 5%;
-    margin-top: 15px;
+.TitleText{
+    align-Self: center;
+    color: #000000;
+    font-Size: 35px;
+    font-Weight: 700;
+    margin-top: 25px;
 }
 .Text{
-    font-Size: 25px;
-    align-Self: "center";
-    color: "#ffffff";
+    font-Size: 35px;
+    align-Self: center;
     margin-bottom: 2px;
-    margin-top: 2px;
+    margin-top: 15px;
+}
+.chartArea{
+    width: 300px;
+    justify-Content: center;
+    align-Self: center;
 }
 
 }

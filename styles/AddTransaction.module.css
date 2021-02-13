@@ -1,3 +1,75 @@
+@media(max-width:2559px){
+  .container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#4083E6,#0645A3);
+  font-family: Helvetica;
+}
+.title {
+  text-align: center;
+  color: #ffffff;
+  font-size:70px;
+  margin-top: 7%;
+  margin-bottom: 3%;
+}
+.Form{
+  background-color: #99b4ff6b;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  backdrop-filter: blur(2px);
+  padding: 5%;
+  justify-content: center;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 70%;
+  height: fit-content;
+}
+.formLabel{
+  display: block;
+  margin: 2%;
+  font-weight: 600;
+  font-size:40px;
+}
+.formInput{
+  display: block;
+  margin: 2%;
+  padding: 2%;
+  border-top: none; 
+  border-left: none;
+  border-right: none;
+  border-radius: 15px;
+  height: 110px;
+  background-color: none;
+  font-size:40px;
+}
+.formBtn{
+  margin-top: 7%;
+  width: fit-content;
+  justify-content: center;
+  align-self: center;
+  background-color: royalblue;
+  color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  padding: 2%;
+}
+.formBtn:hover{
+  background-color: rgba(65, 105, 225, 0.616);
+  cursor: pointer;
+}
+.BackBtn{
+    width: 25px;
+    color: #ffffff;
+}
+.BackBtn:hover{
+  width: 25px;
+  color: #ffffff;
+  cursor: pointer;
+}
+}
 @media(max-width:1440px){
   .container {
   min-height: 100vh;
@@ -12,6 +84,7 @@
   color: #ffffff;
   margin-top: 50px;
   margin-bottom: 5%;
+  font-size: 40px;
 }
 .Form{
   background-color: #99b4ff6b;
@@ -19,26 +92,28 @@
   flex-direction: column;
   border-radius: 10px;
   backdrop-filter: blur(2px);
-  padding: 4%;
+  padding: 2%;
   justify-content: center;
-  margin-left: 15%;
+  margin-left: 25%;
   margin-bottom: 10%;
-  width: 70%;
-  height: fit-content;
+  width: 50%;
+  height: 600px;
 }
 .formLabel{
   display: block;
   margin: 2%;
   font-weight: 600;
+  font-size: 16px;
 }
 .formInput{
+  font-size: 14px;
   display: block;
   margin: 2%;
   border-top: none; 
   border-left: none;
   border-right: none;
   border-radius: 5px;
-  height: 25px;
+  height: 40px;
   background-color: none;
 }
 .formBtn{

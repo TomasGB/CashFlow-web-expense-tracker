@@ -1,5 +1,5 @@
-@media (max-width: 426px){
-.container {
+@media (max-width: 2559px){
+  .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -14,27 +14,29 @@
   color: #ffffff;
   margin-top: 5%;
   margin-bottom: 10%;
+  font-size: 60px;
 }
 .Form{
   background-color: #99b4ff6b;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 15px;
   backdrop-filter: blur(2px);
   padding: 5%;
-  height: 200px;
+  height: 800px;
+  width: 600px;
 }
 .formLabel{
   display: block;
   margin: 2%;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 30px;
 }
 .formInput{
-  font-size: 14px;
+  font-size: 28px;
   display: block;
   margin: 4% 2%;
-  padding: 6%;
+  padding: 5%;
   border-top: none; 
   border-left: none;
   border-right: none;
@@ -43,15 +45,79 @@
   background-color: none;
 }
 .formBtn{
-  margin-top: 40px;
+  margin-top: 30px;
   width: fit-content;
   justify-content: center;
   align-self: center;
   background-color: #4083E6;
   border-radius: 5%;
   border: none;
-  padding: 7% 15%;
+  padding: 4% 15%;
   font-weight: 700;
+  font-size: 28px;
+}
+.formBtn:hover{
+  background-color: rgba(65, 105, 225, 0.616);
+  cursor: pointer;
+}
+}
+@media (max-width: 1440px){
+  .container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#4083E6,#0645A3);
+  font-family: Helvetica;
+}
+.title {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  font-size: 40px;
+}
+.Form{
+  background-color: #99b4ff6b;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  backdrop-filter: blur(2px);
+  padding: 5%;
+  height: 480px;
+  width: 400px;
+}
+.formLabel{
+  display: block;
+  margin: 2%;
+  font-weight: 600;
+  font-size: 16px;
+}
+.formInput{
+  font-size: 14px;
+  display: block;
+  margin: 4% 2%;
+  padding: 4%;
+  border-top: none; 
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+  height: 25px;
+  background-color: none;
+}
+.formBtn{
+  margin-top: 30px;
+  width: fit-content;
+  justify-content: center;
+  align-self: center;
+  background-color: #4083E6;
+  border-radius: 5%;
+  border: none;
+  padding: 4% 15%;
+  font-weight: 700;
+  font-size: 14px;
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
@@ -118,8 +184,8 @@
   cursor: pointer;
 }
 }
-@media (min-width: 769px){
-  .container {
+@media (max-width: 425px){
+.container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -129,12 +195,11 @@
   background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
-  .title {
+.title {
   text-align: center;
   color: #ffffff;
   margin-top: 5%;
   margin-bottom: 10%;
-  font-size: 40px;
 }
 .Form{
   background-color: #99b4ff6b;
@@ -143,20 +208,19 @@
   border-radius: 5px;
   backdrop-filter: blur(2px);
   padding: 5%;
-  height: 540px;
-  width: 400px;
+  height: 200px;
 }
 .formLabel{
   display: block;
   margin: 2%;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
 }
 .formInput{
-  font-size: 18px;
+  font-size: 14px;
   display: block;
   margin: 4% 2%;
-  padding: 5%;
+  padding: 6%;
   border-top: none; 
   border-left: none;
   border-right: none;
@@ -165,7 +229,7 @@
   background-color: none;
 }
 .formBtn{
-  margin-top: 30px;
+  margin-top: 40px;
   width: fit-content;
   justify-content: center;
   align-self: center;
@@ -174,7 +238,6 @@
   border: none;
   padding: 7% 15%;
   font-weight: 700;
-  font-size: 14px;
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
@@ -196,7 +259,7 @@
   text-align: center;
   color: #ffffff;
   margin-top: 5%;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
   font-size: 80px;
 }
 .Form{
@@ -206,8 +269,9 @@
   border-radius: 25px;
   backdrop-filter: blur(2px);
   padding: 10%;
-  height: 1200px;
+  height: 1150px;
   width: 800px;
+  margin-bottom: 2%;
 }
 .formLabel{
   display: block;
@@ -228,14 +292,14 @@
   background-color: none;
 }
 .formBtn{
-  margin-top: 100px;
+  margin-top: 70px;
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background: linear-gradient(#4083E6,#0645A3);
+  background-color: #99b4ff6b;
   border-radius: 10%;
   border: none;
-  padding: 7% 10%;
+  padding: 5% 15%;
   font-weight: 700;
   font-size: 40px;
 }

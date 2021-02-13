@@ -1,3 +1,80 @@
+@media (max-width:2559px){
+.wrapper{
+    margin-top: 25px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 96vw;
+    padding: 15px 35px;
+    background-color: #3986F9,
+}
+.transaction {
+    background-Color: rgba(134, 216, 247 , 0.2);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    list-style: none;
+    width: 550px;
+}
+.transactionBlank{
+    width:275px;
+    height: 150px;
+    border-radius: 5px;
+    list-style: none;
+    background-Color: rgba(134, 216, 247 , 0.2);
+}
+.transactionTop{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.transactionBottom{
+    width: 100%;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+
+}
+.transactionBottom li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+    margin-bottom: 15px;
+    margin-left: -25px;
+    color: #1f1f1f;
+
+}
+.ArrowExpense{
+    margin-left: 5px;
+    color: #D12820;
+    transform: rotateX(180deg);
+    width: 35px;
+    justify-content: end;
+}
+.ArrowIncome{
+    color: #2B9B2A;
+    width: 35px;
+    justify-content: end;
+}
+.deleteBtn{
+    width: 30px;
+    justify-content: "center";
+    margin-Top: 40px;
+}
+.deleteBtn:hover{
+    color: rgba(39, 38, 38, 0.877);
+    cursor: pointer;
+}
+}
+@media (max-width:1440px){
 .wrapper{
     margin-top: 25px;
 }
@@ -71,6 +148,7 @@
 .deleteBtn:hover{
     color: rgba(39, 38, 38, 0.877);
     cursor: pointer;
+}
 }
 @media (max-width:769px){
 
@@ -160,7 +238,6 @@
 }
 }
 @media (min-width:2560px){
-
 .wrapper{
     margin-top: 25px;
 }
@@ -175,14 +252,14 @@
 .transaction {
     background-Color: rgba(134, 216, 247 , 0.2);
     margin: 5px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     list-style: none;
-    width: 600px;
+    width: 750px;
 }
 .transactionBlank{
-    width:275px;
-    height: 150px;
+    width:750px;
+    height: 650px;
     border-radius: 5px;
     list-style: none;
     background-Color: rgba(134, 216, 247 , 0.2);
@@ -194,11 +271,11 @@
     text-align: left;
     align-items: center;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 35px;
 }
 .transactionBottom{
     width: 100%;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
     display: flex;
     justify-content: space-between;
