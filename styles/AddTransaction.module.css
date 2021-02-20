@@ -116,6 +116,9 @@
   height: 40px;
   background-color: none;
 }
+.Option{
+  font-size: 16px;
+}
 .formBtn{
   margin-top: 25px;
   width: fit-content;

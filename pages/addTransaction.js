@@ -155,24 +155,62 @@ function AddTransaction({ session }) {
                             <option value="Expense">Expense</option>
                         </select>
                         <label className={styles.formLabel}>Category</label>
-                        <select
-                            className={styles.formInput}
-                            onChange={(value) =>
-                                setState({
-                                    ...state,
-                                    Category: value.target.value,
-                                })
-                            }>
-                            <option selected disabled hidden>
-                                Choose a category
-                            </option>
-                            <option value="Others">Others</option>
-                            <option value="Food">Food</option>
-                            <option value="Bills">Bills</option>
-                            <option value="Car expenses">Car expenses</option>
-                            <option value="Work">Work</option>
-                            <option value="Investments">Investments</option>
-                        </select>
+                        {state.Type == "Income" ? (
+                            <select
+                                className={styles.formInput}
+                                onChange={(value) =>
+                                    setState({
+                                        ...state,
+                                        Category: value.target.value,
+                                    })
+                                }>
+                                <option selected disabled hidden>
+                                    Choose a category
+                                </option>
+                                <option className={styles.Option} value="Work">
+                                    Work
+                                </option>
+                                <option
+                                    className={styles.Option}
+                                    value="Investments">
+                                    Investments
+                                </option>
+                                <option
+                                    className={styles.Option}
+                                    value="Others">
+                                    Others
+                                </option>
+                            </select>
+                        ) : (
+                            <select
+                                className={styles.formInput}
+                                onChange={(value) =>
+                                    setState({
+                                        ...state,
+                                        Category: value.target.value,
+                                    })
+                                }>
+                                <option selected disabled hidden>
+                                    Choose a category
+                                </option>
+                                <option className={styles.Option} value="Food">
+                                    Food
+                                </option>
+                                <option className={styles.Option} value="Bills">
+                                    Bills
+                                </option>
+                                <option
+                                    className={styles.Option}
+                                    value="Car expenses">
+                                    Car expenses
+                                </option>
+                                <option
+                                    className={styles.Option}
+                                    value="Others">
+                                    Others
+                                </option>
+                            </select>
+                        )}
                         <div
                             className={styles.formBtn}
                             onClick={createTransaction}>
