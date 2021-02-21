@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #266BD1;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
   .title {
@@ -49,7 +49,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: #266BD1;
+  background-color: #4083E6;
   border-radius: 5%;
   border: none;
   padding: 4% 15%;
@@ -69,7 +69,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #266BD1;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
 .title {
@@ -112,7 +112,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: #266BD1;
+  background-color: #4083E6;
   border-radius: 5%;
   border: none;
   padding: 4% 15%;
@@ -132,7 +132,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #266BD1;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
   .title {
@@ -175,7 +175,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: #266BD1;
+  background-color: #4083E6;
   border-radius: 5%;
   border: none;
   padding: 4% 15%;
@@ -194,7 +194,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #266BD1;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
 .title {
@@ -240,7 +240,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: #266BD1;
+  background-color: #4083E6;
   border-radius: 5%;
   border: none;
   padding: 6% 15%;
@@ -259,7 +259,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: royalblue;
+  background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
 .title {
@@ -302,7 +302,7 @@
   width: fit-content;
   justify-content: center;
   align-self: center;
-  background-color: royalblue;
+  background-color: #4083E6;
   border-radius: 10%;
   border: none;
   padding: 6% 18%;

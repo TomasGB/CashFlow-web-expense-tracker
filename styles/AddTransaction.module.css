@@ -45,6 +45,9 @@
   background-color: none;
   font-size:40px;
 }
+.Option{
+  font-size: 42px;
+}
 .formBtn{
   margin-top: 7%;
   width: fit-content;
@@ -146,7 +149,7 @@
 }
 }
 @media(max-width:769px){
-  .container {
+.container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -180,13 +183,16 @@
 }
 .formInput{
   display: block;
-  margin: 5%;
+  margin: 2% 5%;
   border-top: none; 
   border-left: none;
   border-right: none;
   border-radius: 5px;
-  height: 25px;
+  height: 40px;
   background-color: none;
+}
+.Option{
+  font-size: 16px;
 }
 .formBtn{
   margin-top: 25px;
@@ -215,7 +221,7 @@
 }
 }
 @media(max-width:425px){
-  .container {
+.container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -257,6 +263,9 @@
   border-radius: 5px;
   height: 25px;
   background-color: none;
+}
+.Option{
+  font-size: 14px;
 }
 .formBtn{
   margin-top: 25px;
@@ -329,6 +338,9 @@
   height: 70px;
   background-color: none;
   font-size:40px;
+}
+.Option{
+  font-size: 42px;
 }
 .formBtn{
   margin-top: 7%;

@@ -151,8 +151,12 @@ function AddTransaction({ session }) {
                             <option selected disabled hidden>
                                 Choose type
                             </option>
-                            <option value="Income">Income</option>
-                            <option value="Expense">Expense</option>
+                            <option className={styles.Option} value="Income">
+                                Income
+                            </option>
+                            <option className={styles.Option} value="Expense">
+                                Expense
+                            </option>
                         </select>
                         <label className={styles.formLabel}>Category</label>
                         {state.Type == "Income" ? (
