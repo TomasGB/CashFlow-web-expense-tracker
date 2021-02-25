@@ -200,7 +200,7 @@
   text-align: center;
   color: #ffffff;
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 9%;
 }
 .Form{
   background-color: #99b4ff6b;
@@ -211,7 +211,7 @@
   padding: 5%;
   height: fit-content;
   width: 95%;
-  margin: 0% 3%;
+  margin: 1% 3%;
 }
 .formLabel{
   display: block;
@@ -239,7 +239,7 @@
   background-color: #4083E6;
   border-radius: 5%;
   border: none;
-  padding: 7% 15%;
+  padding: 6% 25%;
   font-weight: 700;
 }
 .formBtn:hover{
