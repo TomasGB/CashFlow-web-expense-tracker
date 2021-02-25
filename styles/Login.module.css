@@ -200,8 +200,10 @@
 .title {
   text-align: center;
   color: #ffffff;
-  margin-top: 5%;
+  width: 90%;
+  margin-top: 2%;
   margin-bottom: 15%;
+  margin-left: 5%;
 }
 .Form{
   background-color: #99b4ff6b;
@@ -214,8 +216,8 @@
   padding: 5%;
   margin-left: auto;
   margin-right: auto;
-  height: 300px;
-  width: 250px;
+  height: 350px;
+  width: 300px;
 }
 .formLabel{
   display: block;
