@@ -5,12 +5,12 @@ import "firebase/firestore";
 import Router from "next/router";
 import Head from "next/head";
 import styles from "../styles/Dashboard.module.css";
-import Balance from "../components/balance";
-import BalanceBlank from "../components/balanceBlank";
-import TransactionList from "../components/transactionList";
-import IncomeChart from "../components/incomeChart";
-import ExpenseChart from "../components/expenseChart";
-import BlankChart from "../components/blankCharts";
+import Balance from "../components/balance/balance";
+import BalanceBlank from "../components/balance/balanceBlank";
+import TransactionList from "../components/transactionList/transactionList";
+import IncomeChart from "../components/charts/incomeChart";
+import ExpenseChart from "../components/charts/expenseChart";
+import BlankChart from "../components/charts/blankCharts";
 import {
     faChartBar,
     faPlus,
@@ -21,7 +21,7 @@ import { useAuth } from "../services/auth";
 import nookies from "nookies";
 import { verifyIdToken } from "../services/firebaseAdmin";
 import firebaseClient from "../services/firebaseClient";
-import TransactionListBlank from "../components/transactionListBlank";
+import TransactionListBlank from "../components/transactionList/transactionListBlank";
 
 export async function getServerSideProps(context) {
     try {

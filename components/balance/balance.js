@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Styles from "../styles/Balance.module.css";
+import Styles from "../../styles/Balance.module.css";
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";

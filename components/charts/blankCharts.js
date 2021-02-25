@@ -1,7 +1,7 @@
 import React from "react";
 import "firebase/auth";
 import "firebase/firestore";
-import styles from "../styles/Charts.module.css";
+import styles from "../../styles/Charts.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faQuestion,

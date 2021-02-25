@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../styles/Balance.module.css";
+import Styles from "../../styles/Balance.module.css";
 
 function BalanceBlank() {
     return (
