@@ -7,8 +7,8 @@ Personal Finance tracker app, to keep track of money transactions and see basic 
 -   Open up command prompt / terminal.
 -   Clone this repository.
 -   Run  `npm install` to install the dependencies.
--   Inside the `/services` directory remove 'sample' from `firebaseAdminSample.js` and `firebaseClientSample.js`.
--   Modify `firebaseConfig` inside `firebaseAdminSample.js` with your own Firebase app keys. 
+-   Inside the `services/` directory remove 'sample' from `firebaseAdminSample.js` and `firebaseClientSample.js`.
+-   Modify `firebaseConfig` inside `firebaseAdmin.js` with your own Firebase app keys. 
 -   Run ```npm run dev``` to run the development server.
 -   On your browser go to `http://localhost:3000/`.
 
