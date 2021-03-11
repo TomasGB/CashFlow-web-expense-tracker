@@ -80,6 +80,7 @@ export default function LoginPage() {
                     <button
                         type="submit"
                         onClick={handleSignIn}
+                        onEnter={handleSignIn}
                         className={styles.formBtn}>
                         Login
                     </button>

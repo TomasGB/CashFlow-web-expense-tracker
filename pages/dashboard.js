@@ -22,6 +22,7 @@ import nookies from "nookies";
 import { verifyIdToken } from "../services/firebaseAdmin";
 import firebaseClient from "../services/firebaseClient";
 import TransactionListBlank from "../components/transactionList/transactionListBlank";
+import NavBar from "../components/navbar/navbar";
 
 export async function getServerSideProps(context) {
     try {
@@ -78,6 +79,7 @@ export default function Dashboard({ session }) {
                         content="Personal finance app, to keep track of your incomes and expenses."
                     />
                 </Head>
+
                 <div>
                     <div
                         style={{
@@ -85,39 +87,8 @@ export default function Dashboard({ session }) {
                             flexDirection: "column",
                             justifyContent: "space-evenly",
                         }}>
+                        <NavBar />
                         <h1 className={styles.title}>Hello, {Name}</h1>
-                        <nav className={styles.navbar}>
-                            <button
-                                type="submit"
-                                className={styles.formBtn}
-                                onClick={addTransaction}>
-                                <p className={styles.p}>Add transaction</p>
-                                <FontAwesomeIcon
-                                    icon={faPlus}
-                                    className={styles.icons}
-                                />
-                            </button>
-                            <button
-                                type="submit"
-                                className={styles.formBtn}
-                                onClick={goToAnalyticsPage}>
-                                <p className={styles.p}>Analytics</p>
-                                <FontAwesomeIcon
-                                    icon={faChartBar}
-                                    className={styles.icons}
-                                />
-                            </button>
-                            <button
-                                type="submit"
-                                className={styles.formBtn}
-                                onClick={loggingOut}>
-                                <p className={styles.p}>Log Out</p>
-                                <FontAwesomeIcon
-                                    icon={faSignOutAlt}
-                                    className={styles.icons}
-                                />
-                            </button>
-                        </nav>
                     </div>
                     <div className={styles.wrapper}>
                         {currentUserUID != null ? (

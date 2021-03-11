@@ -12,6 +12,7 @@ import styles from "../styles/AddTransaction.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Loading from "./loadingPage";
+import NavBar from "../components/navbar/navbar";
 
 export async function getServerSideProps(context) {
     try {
@@ -112,6 +113,7 @@ function AddTransaction({ session }) {
                     />
                 </Head>
                 <div>
+                    <NavBar />
                     <h1 className={styles.title}>Add a new transaction</h1>
                     <div className={styles.Form}>
                         <label className={styles.formLabel}>Description</label>

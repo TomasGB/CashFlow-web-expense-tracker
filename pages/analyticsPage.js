@@ -15,6 +15,7 @@ import firebaseClient from "../services/firebaseClient";
 import nookies from "nookies";
 import { verifyIdToken } from "../services/firebaseAdmin";
 import Loading from "./loadingPage";
+import NavBar from "../components/navbar/navbar";
 
 export async function getServerSideProps(context) {
     try {
@@ -53,29 +54,8 @@ export default function Analytics({ session }) {
                             flexDirection: "column",
                             justifyContent: "space-evenly",
                         }}>
+                        <NavBar />
                         <h1 className={styles.title}>Analytics</h1>
-                        <nav className={styles.navbar}>
-                            <button
-                                type="submit"
-                                className={styles.formBtn}
-                                onClick={goToDashboardPage}>
-                                <p className={styles.p}>Dashboard</p>
-                                <FontAwesomeIcon
-                                    icon={faHome}
-                                    className={styles.icons}
-                                />
-                            </button>
-                            <button
-                                type="submit"
-                                className={styles.formBtn}
-                                onClick={addTransaction}>
-                                <p className={styles.p}>Add transaction</p>
-                                <FontAwesomeIcon
-                                    icon={faPlus}
-                                    className={styles.icons}
-                                />
-                            </button>
-                        </nav>
                     </div>
                     <div className={styles.wrapper}>
                         {user.uid != null ? (
