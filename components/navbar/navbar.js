@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Router from "next/router";
 import Link from "next/link";
 import styles from "../../styles/Navbar.module.css";
 import firebase from "firebase/app";
