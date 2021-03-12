@@ -29,6 +29,7 @@
   text-align: start;
   margin-left: 50px;
   font-size: 4rem;
+  z-index: 999;
   }
 .h5 {
   text-align: center;
@@ -70,7 +71,7 @@
 }
 }
 @media (max-width:1440px){
-  .container {
+.container {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -100,6 +101,7 @@
   text-align: start;
   margin-left: 25px;
   font-size: 30px;
+  z-index: 999;
   }
 .h5 {
   text-align: center;
@@ -170,6 +172,7 @@
 .title{
   text-align: start;
   margin-left: 25px;
+  z-index: 999;
   }
 .h5 {
   text-align: center;
@@ -241,6 +244,8 @@
   text-align: start;
   margin-left: 25px;
   font-size: 1.5rem;
+  z-index: 999;
+  width:fit-content;
   }
 .h5 {
   text-align: center;
@@ -312,6 +317,7 @@
   text-align: start;
   margin-left: 50px;
   font-size: 4rem;
+  z-index: 999;
   }
 .h5 {
   text-align: center;

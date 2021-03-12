@@ -87,8 +87,8 @@ export default function Dashboard({ session }) {
                             flexDirection: "column",
                             justifyContent: "space-evenly",
                         }}>
-                        <NavBar />
                         <h1 className={styles.title}>Hello, {Name}</h1>
+                        <NavBar />
                     </div>
                     <div className={styles.wrapper}>
                         {currentUserUID != null ? (

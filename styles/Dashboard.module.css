@@ -28,6 +28,7 @@
 .title{
   text-align: start;
   margin-left: 25px;
+  z-index: 999;
   }
 .h5 {
   text-align: center;
@@ -97,7 +98,10 @@
 }
 .title{
   text-align: start;
+  width: fit-content;
+  margin-Top: 25px;
   margin-left: 25px;
+  z-index: 999;
   }
 .h5 {
   text-align: center;
@@ -169,6 +173,7 @@
   text-align: start;
   margin-left: 25px;
   font-size: 1.5rem;
+  z-index: 999;
   }
 .h5 {
   text-align: center;
@@ -240,6 +245,7 @@
   text-align: start;
   margin-left: 50px;
   font-size: 4rem;
+  z-index: 999;
   }
 .h5 {
   text-align: center;

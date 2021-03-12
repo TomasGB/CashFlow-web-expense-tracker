@@ -54,8 +54,8 @@ export default function Analytics({ session }) {
                             flexDirection: "column",
                             justifyContent: "space-evenly",
                         }}>
-                        <NavBar />
                         <h1 className={styles.title}>Analytics</h1>
+                        <NavBar />
                     </div>
                     <div className={styles.wrapper}>
                         {user.uid != null ? (

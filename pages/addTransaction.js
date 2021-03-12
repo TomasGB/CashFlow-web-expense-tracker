@@ -113,7 +113,6 @@ function AddTransaction({ session }) {
                     />
                 </Head>
                 <div>
-                    <NavBar />
                     <h1 className={styles.title}>Add a new transaction</h1>
                     <div className={styles.Form}>
                         <label className={styles.formLabel}>Description</label>

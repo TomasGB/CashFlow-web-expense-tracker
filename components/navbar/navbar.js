@@ -49,11 +49,11 @@ function NavBar() {
                                     activeClassName={styles.active}
                                     className={styles.navLinks}
                                     onClick={handleClick}>
-                                    Dashboard
                                     <FontAwesomeIcon
                                         icon={faHome}
                                         className={styles.icons}
                                     />
+                                    Dashboard
                                 </a>
                             </Link>
                         </li>
@@ -63,11 +63,11 @@ function NavBar() {
                                     activeClassName={styles.active}
                                     className={styles.navLinks}
                                     onClick={handleClick}>
-                                    Add new transaction
                                     <FontAwesomeIcon
                                         icon={faPlus}
                                         className={styles.icons}
                                     />
+                                    Add new transaction
                                 </a>
                             </Link>
                         </li>
@@ -77,11 +77,11 @@ function NavBar() {
                                     activeClassName={styles.active}
                                     className={styles.navLinks}
                                     onClick={handleClick}>
-                                    Analytics
                                     <FontAwesomeIcon
                                         icon={faChartBar}
                                         className={styles.icons}
                                     />
+                                    Analytics
                                 </a>
                             </Link>
                         </li>
@@ -90,11 +90,11 @@ function NavBar() {
                                 activeClassName={styles.active}
                                 className={styles.navLinks}
                                 onClick={loggingOut}>
-                                Log out
                                 <FontAwesomeIcon
                                     icon={faSignOutAlt}
                                     className={styles.icons}
                                 />
+                                Log out
                             </a>
                         </li>
                     </ul>
