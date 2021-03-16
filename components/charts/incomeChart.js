@@ -18,12 +18,45 @@ export default function IncomeChart(props) {
         const [investmensIncome, setinvestmensIncome] = useState(0);
         const [otherIncome, setOtherIncome] = useState(0);
 
+        function CheckLastDayOfMonth(uid) {
+            let today = new Date();
+            let month = today.getMonth() + 1;
+            today.setDate(today.getDate() + 1);
+            let tomorrowMonth = today.getMonth() + 1;
+            let actualized = 0;
+
+            if (month != tomorrowMonth && actualized < 1) {
+                let dbRef = firebase
+                    .firestore()
+                    .collection("users")
+                    .doc(uid)
+                    .collection("LastMonth")
+                    .doc("Income");
+
+                dbRef.get().then((docSnapshot) => {
+                    if (docSnapshot.exists) {
+                        dbRef.onSnapshot((doc) => {
+                            // update the data
+                            dbRef.update({
+                                Income: income,
+                            });
+                            actualized = 1;
+                            console.log(actualized + " update");
+                        });
+                    } else {
+                        dbRef.set({
+                            Income: income,
+                        }); // create the document
+                        actualized = 1;
+                        console.log(actualized + " add");
+                    }
+                });
+            }
+        }
         useEffect(() => {
-            firebase
-                .firestore()
-                .collection("users")
-                .doc(props.uid)
-                .collection("transactionsList")
+            const db = firebase.firestore().collection("users").doc(props.uid);
+            //CheckLastDayOfMonth(props.uid);
+            db.collection("transactionsList")
                 .orderBy("dateId", "desc")
                 .onSnapshot((querySnapshot) => {
                     let acumIncome = 0;

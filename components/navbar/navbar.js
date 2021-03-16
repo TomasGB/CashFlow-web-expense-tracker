@@ -34,7 +34,7 @@ function NavBar() {
             setClick(!click);
         }
     };
-    console.log(click);
+    //console.log(click);
     return (
         <>
             <nav className={styles.navbar}>
