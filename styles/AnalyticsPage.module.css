@@ -242,6 +242,7 @@
 }
 .title{
   text-align: start;
+  margin-top: 25px;
   margin-left: 25px;
   font-size: 1.5rem;
   z-index: 999;
