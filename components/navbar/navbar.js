@@ -46,7 +46,7 @@ function NavBar() {
                         <li className={styles.navItem}>
                             <Link href="/dashboard">
                                 <a
-                                    activeClassName={styles.active}
+                                    activeclassname={styles.active}
                                     className={styles.navLinks}
                                     onClick={handleClick}>
                                     <FontAwesomeIcon
@@ -60,7 +60,7 @@ function NavBar() {
                         <li className={styles.navItem}>
                             <Link href="/addTransaction">
                                 <a
-                                    activeClassName={styles.active}
+                                    activeclassname={styles.active}
                                     className={styles.navLinks}
                                     onClick={handleClick}>
                                     <FontAwesomeIcon
@@ -74,7 +74,7 @@ function NavBar() {
                         <li className={styles.navItem}>
                             <Link href="/analyticsPage">
                                 <a
-                                    activeClassName={styles.active}
+                                    activeclassname={styles.active}
                                     className={styles.navLinks}
                                     onClick={handleClick}>
                                     <FontAwesomeIcon
@@ -87,7 +87,7 @@ function NavBar() {
                         </li>
                         <li className={styles.navItem}>
                             <a
-                                activeClassName={styles.active}
+                                activeclassname={styles.active}
                                 className={styles.navLinks}
                                 onClick={loggingOut}>
                                 <FontAwesomeIcon

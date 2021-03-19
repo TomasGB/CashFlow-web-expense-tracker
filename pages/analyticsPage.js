@@ -60,8 +60,8 @@ export default function Analytics({ session }) {
                     <div className={styles.wrapper}>
                         {user.uid != null ? (
                             <div>
-                                <IncomeChart uid={user.uid} />
-                                <ExpenseChart uid={user.uid} />
+                                <IncomeChart uid={user.uid} summary={false} />
+                                <ExpenseChart uid={user.uid} summary={false} />
                             </div>
                         ) : (
                             <div>

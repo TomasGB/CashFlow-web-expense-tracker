@@ -112,8 +112,14 @@ export default function Dashboard({ session }) {
                             <b className={styles.subtitle}>Analytics Summary</b>
                             {currentUserUID != null ? (
                                 <div>
-                                    <IncomeChart uid={currentUserUID} />
-                                    <ExpenseChart uid={currentUserUID} />
+                                    <IncomeChart
+                                        uid={currentUserUID}
+                                        summary={true}
+                                    />
+                                    <ExpenseChart
+                                        uid={currentUserUID}
+                                        summary={true}
+                                    />
                                 </div>
                             ) : (
                                 <div>

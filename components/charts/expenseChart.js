@@ -98,98 +98,148 @@ export default function ExpenseChart(props) {
                     marginTop: "50px",
                 }}>
                 <div className={styles.IncomeTitle}>Expenses</div>
-                <div
-                    style={{
-                        padding: 10,
-                        marginTop: 25,
-                        width: "100%",
-                        display: "flex",
-                        flexDirection: "row",
-                        flexWrap: "wrap",
-                        justifyContent: "space-evenly",
-                    }}>
+                {props.summary == false ? (
                     <div
                         style={{
+                            padding: 10,
+                            marginTop: 25,
+                            width: "100%",
                             display: "flex",
+                            flexDirection: "row",
+                            flexWrap: "wrap",
                             justifyContent: "space-evenly",
-                            alignSelf: "center",
-                            width: "40%",
-                            marginBottom: "5%",
                         }}>
-                        <div className={styles.Category}>
-                            <div
-                                style={{
-                                    alignSelf: "flex-start",
-                                    color: "#000000",
-                                    flexDirection: "row",
-                                }}>
-                                <FontAwesomeIcon
-                                    icon={faFileAlt}
-                                    className={styles.Icons}
-                                />
-                                <div className={styles.TitleText}>Bills</div>
+                        <div
+                            style={{
+                                display: "flex",
+                                justifyContent: "space-evenly",
+                                alignSelf: "center",
+                                width: "40%",
+                                marginBottom: "5%",
+                            }}>
+                            <div className={styles.Category}>
+                                <div
+                                    style={{
+                                        alignSelf: "flex-start",
+                                        color: "#000000",
+                                        flexDirection: "row",
+                                    }}>
+                                    <FontAwesomeIcon
+                                        icon={faFileAlt}
+                                        className={styles.Icons}
+                                    />
+                                    <div className={styles.TitleText}>
+                                        Bills
+                                    </div>
+                                </div>
+                                <div className={styles.Text}>
+                                    ${billsExpense.toFixed(2)}
+                                </div>
+                                <div className={styles.Text}>
+                                    {(
+                                        (billsExpense.toFixed(2) / Expense) *
+                                        100
+                                    ).toFixed(2)}
+                                    %
+                                </div>
                             </div>
-                            <div className={styles.Text}>
-                                ${billsExpense.toFixed(2)}
+                            <div className={styles.Category}>
+                                <div
+                                    style={{
+                                        alignSelf: "flex-start",
+                                        color: "#000000",
+                                        flexDirection: "row",
+                                    }}>
+                                    <FontAwesomeIcon
+                                        icon={faIceCream}
+                                        className={styles.Icons}
+                                    />
+                                    <div className={styles.TitleText}>Food</div>
+                                </div>
+                                <div className={styles.Text}>
+                                    ${foodExpense.toFixed(2)}
+                                </div>
+                                <div className={styles.Text}>
+                                    {(
+                                        (foodExpense.toFixed(2) / Expense) *
+                                        100
+                                    ).toFixed(2)}
+                                    %
+                                </div>
+                            </div>
+                            <div className={styles.Category}>
+                                <div
+                                    style={{
+                                        alignSelf: "flex-start",
+                                        color: "#000000",
+                                        flexDirection: "row",
+                                    }}>
+                                    <FontAwesomeIcon
+                                        icon={faCar}
+                                        className={styles.Icons}
+                                    />
+                                    <div className={styles.TitleText}>Car</div>
+                                </div>
+                                <div className={styles.Text}>
+                                    ${carExpense.toFixed(2)}
+                                </div>
+                                <div className={styles.Text}>
+                                    {(
+                                        (carExpense.toFixed(2) / Expense) *
+                                        100
+                                    ).toFixed(2)}
+                                    %
+                                </div>
+                            </div>
+                            <div className={styles.Category}>
+                                <div
+                                    style={{
+                                        alignSelf: "flex-start",
+                                        color: "#000000",
+                                        flexDirection: "row",
+                                    }}>
+                                    <FontAwesomeIcon
+                                        icon={faQuestion}
+                                        className={styles.Icons}
+                                    />
+                                    <div className={styles.TitleText}>
+                                        Others
+                                    </div>
+                                </div>
+                                <div className={styles.Text}>
+                                    ${otherExpense.toFixed(2)}
+                                </div>
+                                <div className={styles.Text}>
+                                    {(
+                                        (otherExpense.toFixed(2) / Expense) *
+                                        100
+                                    ).toFixed(2)}
+                                    %
+                                </div>
                             </div>
                         </div>
-                        <div className={styles.Category}>
-                            <div
-                                style={{
-                                    alignSelf: "flex-start",
-                                    color: "#000000",
-                                    flexDirection: "row",
-                                }}>
-                                <FontAwesomeIcon
-                                    icon={faIceCream}
-                                    className={styles.Icons}
-                                />
-                                <div className={styles.TitleText}>Food</div>
-                            </div>
-                            <div className={styles.Text}>
-                                ${foodExpense.toFixed(2)}
-                            </div>
-                        </div>
-                        <div className={styles.Category}>
-                            <div
-                                style={{
-                                    alignSelf: "flex-start",
-                                    color: "#000000",
-                                    flexDirection: "row",
-                                }}>
-                                <FontAwesomeIcon
-                                    icon={faCar}
-                                    className={styles.Icons}
-                                />
-                                <div className={styles.TitleText}>Car</div>
-                            </div>
-                            <div className={styles.Text}>
-                                ${carExpense.toFixed(2)}
-                            </div>
-                        </div>
-                        <div className={styles.Category}>
-                            <div
-                                style={{
-                                    alignSelf: "flex-start",
-                                    color: "#000000",
-                                    flexDirection: "row",
-                                }}>
-                                <FontAwesomeIcon
-                                    icon={faQuestion}
-                                    className={styles.Icons}
-                                />
-                                <div className={styles.TitleText}>Others</div>
-                            </div>
-                            <div className={styles.Text}>
-                                ${otherExpense.toFixed(2)}
-                            </div>
+                        <div style={{ marginTop: 15 }}></div>
+                        <div className={styles.chartArea}>
+                            <Pie data={data} width={400} height={400} />
                         </div>
                     </div>
-                    <div style={{ marginTop: 15 }}></div>
-                    <div className={styles.chartArea}>
-                        <Pie data={data} width={400} height={400} />
+                ) : (
+                    <div
+                        style={{
+                            padding: 10,
+                            marginTop: 25,
+                            width: "100%",
+                            display: "flex",
+                            flexDirection: "row",
+                            flexWrap: "wrap",
+                            justifyContent: "center",
+                        }}>
+                        <div style={{ marginTop: 15 }}></div>
+                        <div className={styles.chartArea}>
+                            <Pie data={data} width={400} height={400} />
+                        </div>
                     </div>
-                </div>
+                )}
             </div>
         );
     }
