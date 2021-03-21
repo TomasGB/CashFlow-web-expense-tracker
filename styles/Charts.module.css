@@ -45,16 +45,15 @@
 }
 .Icons{
     width: 35px;
-    margin-left: 30%;
     justify-content: center;
     align-self:center;
+    margin-left:40%
 }
 .TitleText{
     text-align: center;
     color: #000000;
     font-Size: 20px;
     font-Weight: 700;
-    margin-Left: 5px;
     margin-top: 15px;
 }
 .Text{

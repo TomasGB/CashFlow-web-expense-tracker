@@ -112,9 +112,10 @@ export default function ExpenseChart(props) {
                         <div
                             style={{
                                 display: "flex",
+                                flexDirection: "row",
                                 justifyContent: "space-evenly",
                                 alignSelf: "center",
-                                width: "40%",
+                                width: "100%",
                                 marginBottom: "5%",
                             }}>
                             <div className={styles.Category}>
@@ -128,10 +129,9 @@ export default function ExpenseChart(props) {
                                         icon={faFileAlt}
                                         className={styles.Icons}
                                     />
-                                    <div className={styles.TitleText}>
-                                        Bills
-                                    </div>
                                 </div>
+                                <div className={styles.TitleText}>Bills</div>
+
                                 <div className={styles.Text}>
                                     ${billsExpense.toFixed(2)}
                                 </div>

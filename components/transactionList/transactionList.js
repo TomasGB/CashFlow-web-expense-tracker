@@ -94,7 +94,7 @@ const TransactionList = (props) => {
                                     <div className={styles.transactionBottom}>
                                         <ul>
                                             {transaction.type == "Expense" ? (
-                                                <li>$ -{transaction.amount}</li>
+                                                <li>$ {transaction.amount}</li>
                                             ) : (
                                                 <li>$ {transaction.amount}</li>
                                             )}

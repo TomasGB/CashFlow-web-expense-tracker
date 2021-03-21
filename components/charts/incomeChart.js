@@ -95,9 +95,10 @@ export default function IncomeChart(props) {
                         <div
                             style={{
                                 display: "flex",
+                                flexDirection: "row",
                                 justifyContent: "space-evenly",
                                 alignSelf: "center",
-                                width: "40%",
+                                width: "100%",
                                 marginBottom: "5%",
                             }}>
                             <div className={styles.Category}>
@@ -111,10 +112,11 @@ export default function IncomeChart(props) {
                                         icon={faFolder}
                                         className={styles.Icons}
                                     />
-                                    <div className={styles.TitleText}>Work</div>
                                 </div>
+                                <div className={styles.TitleText}>Work</div>
+
                                 <div className={styles.Text}>
-                                    ${workIncome.toFixed(2)}
+                                    $ {workIncome.toFixed(2)}
                                 </div>
                                 <div className={styles.Text}>
                                     {(
@@ -140,7 +142,7 @@ export default function IncomeChart(props) {
                                     </div>
                                 </div>
                                 <div className={styles.Text}>
-                                    ${investmensIncome.toFixed(2)}
+                                    $ {investmensIncome.toFixed(2)}
                                 </div>
                                 <div className={styles.Text}>
                                     {(
@@ -166,7 +168,7 @@ export default function IncomeChart(props) {
                                     </div>
                                 </div>
                                 <div className={styles.Text}>
-                                    ${otherIncome.toFixed(2)}
+                                    $ {otherIncome.toFixed(2)}
                                 </div>
                                 <div className={styles.Text}>
                                     {(

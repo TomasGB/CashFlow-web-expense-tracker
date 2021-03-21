@@ -167,7 +167,7 @@
 }
 @media screen and (max-width: 425px) {
   .navbar {
-  background: linear-gradient(#4083E6,#4082e600);
+  background: linear-gradient(#4082e600,#4082e600);
   width: 100%;
   height: fit-content;
   display: flex;
