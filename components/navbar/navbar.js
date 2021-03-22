@@ -34,80 +34,74 @@ function NavBar() {
             setClick(!click);
         }
     };
-    //console.log(click);
     return (
-        <>
-            <nav className={styles.navbar}>
-                <div className={styles.navContainer}>
-                    <ul
-                        className={
-                            click ? styles.navMenuActive : styles.navMenu
-                        }>
-                        <li className={styles.navItem}>
-                            <Link href="/dashboard">
-                                <a
-                                    activeclassname={styles.active}
-                                    className={styles.navLinks}
-                                    onClick={handleClick}>
-                                    <FontAwesomeIcon
-                                        icon={faHome}
-                                        className={styles.icons}
-                                    />
-                                    Dashboard
-                                </a>
-                            </Link>
-                        </li>
-                        <li className={styles.navItem}>
-                            <Link href="/addTransaction">
-                                <a
-                                    activeclassname={styles.active}
-                                    className={styles.navLinks}
-                                    onClick={handleClick}>
-                                    <FontAwesomeIcon
-                                        icon={faPlus}
-                                        className={styles.icons}
-                                    />
-                                    Add new transaction
-                                </a>
-                            </Link>
-                        </li>
-                        <li className={styles.navItem}>
-                            <Link href="/analyticsPage">
-                                <a
-                                    activeclassname={styles.active}
-                                    className={styles.navLinks}
-                                    onClick={handleClick}>
-                                    <FontAwesomeIcon
-                                        icon={faChartBar}
-                                        className={styles.icons}
-                                    />
-                                    Analytics
-                                </a>
-                            </Link>
-                        </li>
-                        <li className={styles.navItem}>
+        <nav className={styles.navbar}>
+            <div className={styles.navContainer}>
+                <ul className={click ? styles.navMenuActive : styles.navMenu}>
+                    <li className={styles.navItem}>
+                        <Link href="/dashboard">
                             <a
                                 activeclassname={styles.active}
                                 className={styles.navLinks}
-                                onClick={loggingOut}>
+                                onClick={handleClick}>
                                 <FontAwesomeIcon
-                                    icon={faSignOutAlt}
+                                    icon={faHome}
                                     className={styles.icons}
                                 />
-                                Log out
+                                Dashboard
                             </a>
-                        </li>
-                    </ul>
-                    <div className={styles.navIcon} onClick={handleClick}>
-                        {click ? (
-                            <FontAwesomeIcon icon={faTimes} width={"25px"} />
-                        ) : (
-                            <FontAwesomeIcon icon={faBars} width={"25px"} />
-                        )}
-                    </div>
+                        </Link>
+                    </li>
+                    <li className={styles.navItem}>
+                        <Link href="/addTransaction">
+                            <a
+                                activeclassname={styles.active}
+                                className={styles.navLinks}
+                                onClick={handleClick}>
+                                <FontAwesomeIcon
+                                    icon={faPlus}
+                                    className={styles.icons}
+                                />
+                                Add new transaction
+                            </a>
+                        </Link>
+                    </li>
+                    <li className={styles.navItem}>
+                        <Link href="/analyticsPage">
+                            <a
+                                activeclassname={styles.active}
+                                className={styles.navLinks}
+                                onClick={handleClick}>
+                                <FontAwesomeIcon
+                                    icon={faChartBar}
+                                    className={styles.icons}
+                                />
+                                Analytics
+                            </a>
+                        </Link>
+                    </li>
+                    <li className={styles.navItem}>
+                        <a
+                            activeclassname={styles.active}
+                            className={styles.navLinks}
+                            onClick={loggingOut}>
+                            <FontAwesomeIcon
+                                icon={faSignOutAlt}
+                                className={styles.icons}
+                            />
+                            Log out
+                        </a>
+                    </li>
+                </ul>
+                <div className={styles.navIcon} onClick={handleClick}>
+                    {click ? (
+                        <FontAwesomeIcon icon={faTimes} width={"25px"} />
+                    ) : (
+                        <FontAwesomeIcon icon={faBars} width={"25px"} />
+                    )}
                 </div>
-            </nav>
-        </>
+            </div>
+        </nav>
     );
 }
 

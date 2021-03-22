@@ -5,12 +5,18 @@
 }
 .Category{
     margin: 5%;
+    width: fit-content;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-self: baseline;
     font-Size: 30px;
 }
 .Icons{
     width: 65px;
+    margin-left: 0%;
+    justify-content: center;
+    align-self:center;
 }
 .TitleText{
     align-Self: center;
@@ -39,15 +45,17 @@
 }
 .Category{
     margin: 5%;
-    width: 100%;
+    width: fit-content;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-self: baseline;
 }
 .Icons{
-    width: 35px;
+    width: 40px;
     justify-content: center;
     align-self:center;
-    margin-left:40%
+    margin-left:0%
 }
 .TitleText{
     text-align: center;
@@ -75,13 +83,15 @@
 }
 .Category{
     margin: 5%;
-    width: 100%;
+    width: fit-content;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-self: baseline;
 }
 .Icons{
     width: 25px;
-    margin-left: 40%;
+    margin-left: 0%;
     justify-content: center;
     align-self:center;
 }
@@ -108,17 +118,19 @@
 @media(max-width:425px){
 .IncomeTitle{
     font-size: 25px;
-    margin: 25px 0px;
+    margin: 25px 15px;
 }
 .Category{
-    margin: 5%;
-    width: 100%;
+    margin: 3%;
+    width: fit-content;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-self: baseline;
 }
 .Icons{
-    width: 25px;
-    margin-left: 35%;
+    width: 30px;
+    margin-left: 0%;
     justify-content: center;
     align-self:center;
 }
@@ -148,14 +160,16 @@
     margin: 25px 0px;
 }
 .Category{
-    margin: 5%;
-    width: 100%;
+    margin: 3%;
+    width: fit-content;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-self: baseline;
 }
 .Icons{
-    width: 25px;
-    margin-left: 25%;
+    width: 30px;
+    margin-left: 0%;
     justify-content: center;
     align-self:center;
 }
@@ -169,7 +183,7 @@
 }
 .Text{
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 2px;
     margin-top: 15px;
 }
@@ -187,12 +201,18 @@
 }
 .Category{
     margin: 5%;
+    width: fit-content;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-self: baseline;
     font-Size: 30px;
 }
 .Icons{
     width: 65px;
+     margin-left: 0%;
+    justify-content: center;
+    align-self:center;
 }
 .TitleText{
     align-Self: center;

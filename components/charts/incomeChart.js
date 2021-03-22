@@ -104,7 +104,8 @@ export default function IncomeChart(props) {
                             <div className={styles.Category}>
                                 <div
                                     style={{
-                                        alignSelf: "flex-start",
+                                        display: "flex",
+                                        alignSelf: "center",
                                         color: "#000000",
                                         flexDirection: "row",
                                     }}>
@@ -129,7 +130,8 @@ export default function IncomeChart(props) {
                             <div className={styles.Category}>
                                 <div
                                     style={{
-                                        alignSelf: "flex-start",
+                                        display: "flex",
+                                        alignSelf: "center",
                                         color: "#000000",
                                         flexDirection: "row",
                                     }}>
@@ -137,9 +139,9 @@ export default function IncomeChart(props) {
                                         icon={faMoneyBillWave}
                                         className={styles.Icons}
                                     />
-                                    <div className={styles.TitleText}>
-                                        Investments
-                                    </div>
+                                </div>
+                                <div className={styles.TitleText}>
+                                    Investments
                                 </div>
                                 <div className={styles.Text}>
                                     $ {investmensIncome.toFixed(2)}
@@ -155,7 +157,8 @@ export default function IncomeChart(props) {
                             <div className={styles.Category}>
                                 <div
                                     style={{
-                                        alignSelf: "flex-start",
+                                        display: "flex",
+                                        alignSelf: "center",
                                         color: "#000000",
                                         flexDirection: "row",
                                     }}>
@@ -163,10 +166,8 @@ export default function IncomeChart(props) {
                                         icon={faQuestion}
                                         className={styles.Icons}
                                     />
-                                    <div className={styles.TitleText}>
-                                        Others
-                                    </div>
                                 </div>
+                                <div className={styles.TitleText}>Others</div>
                                 <div className={styles.Text}>
                                     $ {otherIncome.toFixed(2)}
                                 </div>

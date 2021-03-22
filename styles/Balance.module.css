@@ -123,20 +123,20 @@
     font-Size: 20px;
 }
 .subBalancesTitles{
-    font-size: 15px;
+    font-size: 18px;
     margin-Left: 50px;
     margin-Right: 50px;
     color: rgb(138, 133, 133),
 }
 .subBalanceExpense{
-    font-Size: 14px;
+    font-Size: 16px;
     margin-top: 5%;
     color: rgb(255, 0, 0);
     align-Self: center;
     text-Align: center;
 }
 .subBalanceIncome{
-    font-Size: 14px;
+    font-Size: 16px;
     margin-top: 5%;
     color: rgb(19, 182, 19);
     align-Self: center;
