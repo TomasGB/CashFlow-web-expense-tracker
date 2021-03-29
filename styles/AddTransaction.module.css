@@ -217,31 +217,31 @@
   padding: 4%;
   justify-content: center;
   margin-top: 40px;
-  margin-left: 15%;
+  margin-left: 5%;
   margin-bottom: 10%;
-  width: 70%;
+  width: 90%;
   height: fit-content;
 }
 .formLabel{
   display: block;
-  margin: 2%;
+  margin: 3%;
   font-weight: 600;
 }
 .formInput{
   display: block;
-  margin: 2%;
+  margin: 3%;
   border-top: none; 
   border-left: none;
   border-right: none;
   border-radius: 5px;
-  height: 25px;
+  height: 30px;
   background-color: none;
 }
 .Option{
   font-size: 14px;
 }
 .formBtn{
-  margin-top: 25px;
+  margin-top: 35px;
   width: fit-content;
   justify-content: center;
   align-self: center;
