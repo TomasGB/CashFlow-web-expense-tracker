@@ -55,6 +55,7 @@
   padding: 4% 15%;
   font-weight: 700;
   font-size: 28px;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.3);
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
@@ -118,6 +119,7 @@
   padding: 4% 15%;
   font-weight: 700;
   font-size: 14px;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.3);
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
@@ -179,6 +181,7 @@
   border: none;
   padding: 4% 15%;
   font-weight: 700;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.3);
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
@@ -241,6 +244,7 @@
   border: none;
   padding: 6% 25%;
   font-weight: 700;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.3);
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
@@ -258,7 +262,7 @@
   background: linear-gradient(#4083E6,#0645A3);
   font-family: Helvetica;
 }
-  .title {
+.title {
   text-align: center;
   color: #ffffff;
   margin-top: 5%;
@@ -305,6 +309,7 @@
   padding: 3% 15%;
   font-weight: 700;
   font-size: 40px;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.3);
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);

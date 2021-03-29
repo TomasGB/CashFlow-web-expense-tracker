@@ -4,7 +4,8 @@ import Link from "next/link";
 import "firebase/auth";
 import "firebase/firestore";
 import { useAuth } from "../services/auth";
-
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Home() {
     const { user } = useAuth();
     return (
@@ -39,8 +40,34 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div style={{ justifyContent: "center", marginTop: 15 }}>
-                <p className={styles.copyright}>© Tomas Gomez Bermudez</p>
+            <div style={{ justifyContent: "center", marginTop: 35 }}>
+                <span
+                    style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}>
+                    <FontAwesomeIcon
+                        icon={faCode}
+                        style={{
+                            width: "25px",
+                            marginRight: "15px",
+                            color: "#000000",
+                        }}
+                    />
+                    <p style={{ fontWeight: "400", color: "#000000" }}>
+                        Developed by{" "}
+                        <Link href="https://github.com/TomasGB">
+                            <a
+                                style={{ fontWeight: "700", color: "#000000" }}
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Tomas Gomez Bermudez
+                            </a>
+                        </Link>
+                    </p>
+                </span>
             </div>
         </main>
     );

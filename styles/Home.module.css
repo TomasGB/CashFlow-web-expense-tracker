@@ -21,7 +21,7 @@
   text-align: center;
 }
 .phrase{
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   font-size: 50px;
 }
@@ -40,7 +40,8 @@
   border-radius: 5px;
   font-weight: 700;
   font-size: 40px;
-  color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.3);
 }
 .linkBtn:hover {
   background-color: rgb(44, 94, 204);
@@ -72,7 +73,7 @@
   text-align: center;
 }
 .phrase{
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -91,7 +92,8 @@
   margin: 0% 5%;
   border-radius: 5px;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.3);
 }
 .linkBtn:hover {
   background-color: rgb(44, 94, 204);
@@ -124,7 +126,7 @@
   text-align: center;
 }
 .phrase{
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   font-size: 2rem;
 }
@@ -143,14 +145,11 @@
   margin: 0% 5%;
   border-radius: 5px;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.3);
 }
 .linkBtn:hover {
   background-color: rgb(44, 94, 204);
-}
-.copyright{
-  margin-top: 50px;
-  font-size: 24px;
 }
 }
 @media(max-width:425px){
@@ -176,7 +175,7 @@
   text-align: center;
 }
 .phrase{
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   font-size: 1rem;
 }
@@ -195,7 +194,8 @@
   margin: 0% 5%;
   border-radius: 5px;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.3);
 }
 .linkBtn:hover {
   background-color: rgb(44, 94, 204);
@@ -227,7 +227,7 @@
   text-align: center;
 }
 .phrase{
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   font-size: 50px;
 }
@@ -246,7 +246,8 @@
   border-radius: 5px;
   font-weight: 700;
   font-size: 40px;
-  color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.3);
 }
 .linkBtn:hover {
   background-color: rgb(44, 94, 204);

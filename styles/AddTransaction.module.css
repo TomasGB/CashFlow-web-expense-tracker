@@ -54,22 +54,13 @@
   justify-content: center;
   align-self: center;
   background-color: royalblue;
-  color: #ffffff;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  padding: 2%;
+  color: #000000;
+  border-radius: 5%;
+  padding: 1% 2%;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.425);
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
-  cursor: pointer;
-}
-.BackBtn{
-    width: 25px;
-    color: #ffffff;
-}
-.BackBtn:hover{
-  width: 25px;
-  color: #ffffff;
   cursor: pointer;
 }
 }
@@ -128,23 +119,14 @@
   justify-content: center;
   align-self: center;
   background-color: #266BD1;
-  color: #ffffff;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  padding: 2%;
+  color: #000000;
+  border-radius: 5%;
+  padding: 1% 2%;
   font-weight: 700;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.425);
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
-  cursor: pointer;
-}
-.BackBtn{
-    width: 25px;
-    color: #ffffff;
-}
-.BackBtn:hover{
-  width: 25px;
-  color: #ffffff;
   cursor: pointer;
 }
 }
@@ -200,23 +182,14 @@
   justify-content: center;
   align-self: center;
   background-color: #266BD1;
-  color: #ffffff;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  padding: 2%;
+  color: #000000;
+  border-radius: 5%;
+  padding: 1% 2%;
   font-weight: 700;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.425);
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
-  cursor: pointer;
-}
-.BackBtn{
-    width: 25px;
-    color: #ffffff;
-}
-.BackBtn:hover{
-  width: 25px;
-  color: #ffffff;
   cursor: pointer;
 }
 }
@@ -273,23 +246,14 @@
   justify-content: center;
   align-self: center;
   background-color: #266BD1;
-  color: #ffffff;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  padding: 2%;
+  color: #000000;
+  border-radius: 5%;
+  padding: 1% 2%;
   font-weight: 700;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.425);
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
-  cursor: pointer;
-}
-.BackBtn{
-    width: 25px;
-    color: #ffffff;
-}
-.BackBtn:hover{
-  width: 25px;
-  color: #ffffff;
   cursor: pointer;
 }
 }
@@ -349,9 +313,9 @@
   align-self: center;
   background-color: royalblue;
   color: #ffffff;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  padding: 2%;
+  border-radius: 5%;
+  padding: 1% 2%;
+  box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.425);
 }
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);

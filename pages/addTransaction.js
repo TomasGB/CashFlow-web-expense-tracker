@@ -219,7 +219,7 @@ function AddTransaction({ session }) {
                         <div
                             className={styles.formBtn}
                             onClick={createTransaction}>
-                            <FontAwesomeIcon icon={faPlus} width={"25px"} />
+                            <p>Add new transaction</p>
                         </div>
                     </div>
                 </div>
