@@ -17,6 +17,7 @@
     border-radius: 5px;
     list-style: none;
     width: 550px;
+    box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.2);
 }
 .transactionBlank{
     width:275px;
@@ -93,6 +94,7 @@
     border-radius: 5px;
     list-style: none;
     width: fit-content;
+    box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.2);
 }
 .transactionBlank{
     width:275px;
@@ -170,6 +172,7 @@
     border-radius: 5px;
     list-style: none;
     width: 600px;
+    box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.2);
 }
 .transactionBlank{
     width:275px;
@@ -235,6 +238,7 @@
     border-radius: 5px;
     list-style: none;
     width: 500px;
+    box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.2);
 }
 }
 @media (min-width:2560px){
@@ -256,6 +260,7 @@
     border-radius: 5px;
     list-style: none;
     width: 750px;
+    box-shadow: 0px 5px 10px rgba(95, 95, 95, 0.2);
 }
 .transactionBlank{
     width:750px;

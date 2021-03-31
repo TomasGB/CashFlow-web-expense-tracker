@@ -24,6 +24,7 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   overflow-x: hidden;
+  box-shadow: 0px 0px 60px rgba(83, 83, 83, 0.5);
 }
 .title{
   text-align: start;
@@ -96,6 +97,7 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   overflow-x: hidden;
+  box-shadow: 0px 0px 60px rgba(83, 83, 83, 0.5);
 }
 .title{
   text-align: start;
@@ -168,6 +170,7 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   overflow-x: hidden;
+  box-shadow: 0px 0px 60px rgba(83, 83, 83, 0.5);
 }
 .title{
   text-align: start;
@@ -239,6 +242,7 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   overflow-x: hidden;
+  box-shadow: 0px 0px 60px rgba(83, 83, 83, 0.5);
 }
 .title{
   text-align: start;
@@ -313,6 +317,7 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   overflow-x: hidden;
+  box-shadow: 0px 0px 60px rgba(83, 83, 83, 0.5);
 }
 .title{
   text-align: start;
