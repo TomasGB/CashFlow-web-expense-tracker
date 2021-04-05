@@ -24,4 +24,6 @@ Personal Finance tracker app, to keep track of money transactions and see basic 
 
 ### Demo:
 
-![livePreview](public/cashflowWeb.gif)
+![livePreviewWeb](public/cashflowWeb.gif)
+
+<img src="public/cashflow-mobile.gif" width="200" height="350"/>
