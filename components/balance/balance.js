@@ -58,7 +58,9 @@ function Balance(props) {
                     }}>
                     <div>
                         <b className={Styles.totalBalance}>Your Balance</b>
-                        <h2 className={Styles.totalBalance}>$ {balance}</h2>
+                        <h2 className={Styles.totalBalance}>
+                            $ {balance.toFixed(2)}
+                        </h2>
                     </div>
                 </div>
                 <div
@@ -78,14 +80,14 @@ function Balance(props) {
                         <div
                             className={
                                 Styles.subBalanceIncome
-                            }>{`+ $${totIncome}`}</div>
+                            }>{`+ $${totIncome.toFixed(2)}`}</div>
                     </div>
                     <div>
                         <div className={Styles.subBalancesTitles}>Expense</div>
                         <div
                             className={
                                 Styles.subBalanceExpense
-                            }>{`- $${totExpense}`}</div>
+                            }>{`- $${totExpense.toFixed(2)}`}</div>
                     </div>
                 </div>
             </div>

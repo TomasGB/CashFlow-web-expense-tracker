@@ -90,7 +90,7 @@ function AddTransaction({ session }) {
                     .collection("transactionsList")
                     .add({
                         Description: state.Description,
-                        Amount: state.Amount,
+                        Amount: parseFloat(state.Amount).toFixed(2),
                         Type: state.Type,
                         dateId: date,
                         DateString: dateString,
