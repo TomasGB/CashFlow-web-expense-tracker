@@ -1,5 +1,5 @@
 @media (max-width:2559px){
-  .container {
+.container {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -75,12 +75,6 @@
 .container {
   min-height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#4083E6,#0645A3);
-  font-family: Helvetica;
   overflow-x: hidden;
   padding-left: 2%;
   padding-right: 2%;
@@ -88,9 +82,6 @@
 }
 .wrapper{
   margin-top: 30px;
-  background-color: #ffffff;
-  justify-content: center;
-  align-self: center;
   width: 100vw;
   min-height:100vh;
   padding:5% 2%;
@@ -145,15 +136,9 @@
 }
 }
 @media (max-width:768px){
-  .container {
+.container {
   min-height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#4083E6,#0645A3);
-  font-family: Helvetica;
   overflow-x: hidden;
   padding-left: 2%;
   padding-right: 2%;
@@ -161,9 +146,6 @@
 }
 .wrapper{
   margin-top: 50px;
-  background-color: #ffffff;
-  justify-content: center;
-  align-self: center;
   width: 100vw;
   min-height:100vh;
   padding:5% 2%;
@@ -220,12 +202,6 @@
   .container {
   min-height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#4083E6,#0645A3);
-  font-family: Helvetica;
   overflow-x: hidden;
   padding-left: 2%;
   padding-right: 2%;
@@ -233,9 +209,6 @@
 }
 .wrapper{
   margin-top: 60px;
-  background-color: #ffffff;
-  justify-content: center;
-  align-self: center;
   width: 100vw;
   min-height:100vh;
   padding:5% 2%;
