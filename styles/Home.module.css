@@ -54,16 +54,8 @@
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#4083E6,#0645A3);
-  font-family: Helvetica;
 }
 .title {
-  justify-content: center;
-  text-align: center;
   font-size: 50px;
 }
 .logo {
@@ -78,9 +70,6 @@
   font-size: 1.5rem;
 }
 .linkBtnWrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin-top: 5%;
 }
 .linkBtn {
@@ -107,16 +96,8 @@
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#4083E6,#0645A3);
-  font-family: Helvetica;
 }
 .title {
-  justify-content: center;
-  text-align: center;
   font-size: 50px;
 }
 .logo {
@@ -131,9 +112,6 @@
   font-size: 2rem;
 }
 .linkBtnWrapper{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin-top: 5%;
 }
 .linkBtn {
@@ -156,12 +134,6 @@
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(#4083E6,#0645A3);
-  font-family: Helvetica;
 }
 .title {
   justify-content: center;
