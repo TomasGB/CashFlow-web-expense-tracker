@@ -11,12 +11,6 @@ import TransactionList from "../components/transactionList/transactionList";
 import IncomeChart from "../components/charts/incomeChart";
 import ExpenseChart from "../components/charts/expenseChart";
 import BlankChart from "../components/charts/blankCharts";
-import {
-    faChartBar,
-    faPlus,
-    faSignOutAlt,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAuth } from "../services/auth";
 import nookies from "nookies";
 import { verifyIdToken } from "../services/firebaseAdmin";
@@ -133,23 +127,5 @@ export default function Dashboard({ session }) {
         );
     } else {
         Router.push("/login");
-    }
-
-    async function loggingOut() {
-        try {
-            await firebase.auth().signOut();
-            console.log("logged out!");
-            Router.push("/");
-        } catch (err) {
-            alert("Something went wrong!", err.message);
-            console.log("Something went wrong!", err.message);
-        }
-    }
-
-    function addTransaction() {
-        Router.push("/addTransaction");
-    }
-    function goToAnalyticsPage() {
-        Router.push("/analyticsPage");
     }
 }

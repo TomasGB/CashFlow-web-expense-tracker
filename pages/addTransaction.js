@@ -9,10 +9,7 @@ import firebaseClient from "../services/firebaseClient";
 import Router from "next/router";
 import Head from "next/head";
 import styles from "../styles/AddTransaction.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Loading from "./loadingPage";
-import NavBar from "../components/navbar/navbar";
 
 export async function getServerSideProps(context) {
     try {

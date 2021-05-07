@@ -6,6 +6,7 @@ import "firebase/firestore";
 import { useAuth } from "../services/auth";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Home() {
     const { user } = useAuth();
     return (

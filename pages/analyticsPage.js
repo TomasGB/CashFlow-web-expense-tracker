@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
-import firebase from "firebase/app";
+//import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
-import Router from "next/router";
 import Head from "next/head";
 import styles from "../styles/analyticsPage.module.css";
 import IncomeChart from "../components/charts/incomeChart";
 import ExpenseChart from "../components/charts/expenseChart";
 import BlankChart from "../components/charts/blankCharts";
-import { faHome, faPlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAuth } from "../services/auth";
 import firebaseClient from "../services/firebaseClient";
 import nookies from "nookies";
@@ -76,10 +73,4 @@ export default function Analytics({ session }) {
     } else {
         return <Loading />;
     }
-}
-function addTransaction() {
-    Router.push("/addTransaction");
-}
-function goToDashboardPage() {
-    Router.push("/dashboard");
 }
