@@ -65,6 +65,10 @@
   background-color: rgba(65, 105, 225, 0.616);
   cursor: pointer;
 }
+.formBtn:focus{
+  background-color: rgb(124, 148, 223);
+  cursor:progress;
+}
 }
 @media(max-width:1440px){
 .container {
@@ -79,9 +83,6 @@
   font-size: 40px;
 }
 .Form{
-  /*background-color: #99b4ff6b;
-  display: flex;
-  flex-direction: column;*/
   border-radius: 10px;
   backdrop-filter: blur(2px);
   padding: 2%;
@@ -127,6 +128,10 @@
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
   cursor: pointer;
+}
+.formBtn:focus{
+  background-color: rgb(124, 148, 223);
+  cursor:progress;
 }
 }
 @media(max-width:769px){
@@ -185,6 +190,10 @@
   background-color: rgba(65, 105, 225, 0.616);
   cursor: pointer;
 }
+.formBtn:focus{
+  background-color: rgb(124, 148, 223);
+  cursor:progress;
+}
 }
 @media(max-width:425px){
 .container {
@@ -242,6 +251,10 @@
 .formBtn:hover{
   background-color: rgba(65, 105, 225, 0.616);
   cursor: pointer;
+}
+.formBtn:focus{
+  background-color: rgb(124, 148, 223);
+  cursor:progress;
 }
 }
 @media(min-width:2560px){
@@ -311,12 +324,16 @@
   cursor: pointer;
 }
 .BackBtn{
-    width: 25px;
-    color: #ffffff;
+  width: 25px;
+  color: #ffffff;
 }
 .BackBtn:hover{
   width: 25px;
   color: #ffffff;
   cursor: pointer;
+}
+.formBtn:focus{
+  background-color: rgb(124, 148, 223);
+  cursor:progress;
 }
 }
