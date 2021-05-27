@@ -63,6 +63,7 @@ export default function LoginPage() {
                     <input
                         className={styles.formInput}
                         type="text"
+                        autocomplete="off"
                         placeholder="Enter your email"
                         name="email"
                         onChange={(email) => setEmail(email.target.value)}

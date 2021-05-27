@@ -25,7 +25,7 @@ export async function getServerSideProps(context) {
     }
 }
 
-function AddTransaction({ session }) {
+function AddTransaction() {
     const { user } = useAuth();
     firebaseClient();
 
@@ -116,6 +116,7 @@ function AddTransaction({ session }) {
                         <input
                             className={styles.formInput}
                             type="text"
+                            autocomplete="off"
                             placeholder="Description"
                             onChange={(value) =>
                                 setState({
@@ -128,6 +129,7 @@ function AddTransaction({ session }) {
                         <input
                             className={styles.formInput}
                             type="text"
+                            autocomplete="off"
                             placeholder="Amount"
                             name="numeric"
                             onChange={(value) =>

@@ -83,6 +83,7 @@ export default function SignUpPage() {
                     <input
                         className={styles.formInput}
                         type="text"
+                        autocomplete="off"
                         placeholder="Enter your Name"
                         name="Name"
                         onChange={(Name) => setName(Name.target.value)}
@@ -91,6 +92,7 @@ export default function SignUpPage() {
                     <input
                         className={styles.formInput}
                         type="text"
+                        autocomplete="off"
                         placeholder="Enter your email"
                         name="email"
                         onChange={(email) => setEmail(email.target.value)}
