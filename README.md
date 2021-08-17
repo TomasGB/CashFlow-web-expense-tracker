@@ -35,8 +35,4 @@ Users
                 └ Transactions Data (Amount, Category, DateString, Description, Type, dateID)
 ```
 
-### Demo:
 
-![livePreviewWeb](public/cashflowWeb.gif)
-
-<img src="public/cashflow-mobile.gif" width="200" height="350"/>
